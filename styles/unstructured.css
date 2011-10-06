@@ -1,0 +1,91 @@
+html {
+        background-color: #EAEAD3;
+	height: 100%;
+}
+
+body {
+	margin:10px 0px;
+	padding:0px;
+	height: 100%;
+	text-align: center;
+}
+
+#structured_data_container {
+    color: #4C0037;
+}
+
+
+#loader {
+	padding-top: 25%;
+}
+
+
+#unstructured {
+    display: none;
+    text-align:left;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90%;
+    width: 97%;
+    border: groove 3px #F7B604;
+    border-radius: 6px;
+    background-color: #FFF2FF;
+    padding: 5px 5px 5px 5px;
+    font-size: 1.5em;
+}
+
+
+#structured_data_container {
+    text-align: left;
+    margin-left: 26%;
+    max-width: 40%;
+    font-size: .8em;
+    position: absolute;
+    top: 27%;
+    right:2%;
+}
+
+
+#input_area {
+    width: 600px;
+    height: 400px;
+    border: solid 1px #F7B604;
+}
+
+.intro {
+	color: #AAA9A9;
+	font-style: italic;
+	font-size: 1.2em;
+}
+
+li {
+	padding-bottom: 3px;
+	list-style: none;
+        background-color: #EAEEFF;
+	background-repeat: no-repeat;
+	background-position: 0% .3em;
+	padding:1px 0px 3px 17px;
+	margin-bottom: 5px;
+/*
+	list-style-position:inside;
+*/
+}
+
+#extracted_email li {
+	background-image: url(../images/email.png);
+}
+
+#extracted_phone li {
+	background-image: url(../images/phone.png);
+	/*
+	list-style-image: url(../images/phone.png);
+	*/
+}
+
+#extracted_location li {
+	background-image: url(../images/address.png);
+	/*
+	list-style-image: url(../images/address.png);
+	*/
+}
+
