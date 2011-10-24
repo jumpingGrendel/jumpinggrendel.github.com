@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Breadcrumb Text</title>
+        <style type="text/css">
+            .header {
+                height: 29px;
+            }
+            
+            
+            
+            /*
+             css3 html5
+            */
+            .header-list {
+                display: inline;
+            }
+
+            .header-list li {
+                display: inline;
+            }
+            
+            .header-list li:first-child div  {
+                background-color: #151f40;
+                color: #fff;
+            }
+            
+
+            .header-list li div  {
+                margin-left: 10px;
+                float: left;
+                border: none;
+                height: 30px;
+                border-bottom: 1px solid #aaa;
+                border-top: 1px solid #aaa;
+                line-height: 30px;
+            }
+            
+            .header-list li div:not(.arrow)  {
+                padding-left: 20px;
+                width: 85px;
+                margin-left: -12px;
+            }
+
+            .header-list li div.arrow {
+                border: 1px solid #aaa;
+                border-bottom: none;
+                border-left: none;
+                height: 21.5px;
+                width: 21.5px;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                position: relative;
+                top: 5px;
+                margin-left: -11px;
+            }
+
+            .header-list li:first-child div.arrow {
+                margin-left: 10px;
+            }
+
+            .header-list li:first-child div:not(.arrow) {
+                margin-left:0;
+                margin-right:-21px;
+                position: relative;
+                z-index: 1000;
+                padding-left: 10px;
+                border-left: 1px solid #aaa;
+            }
+            
+            
+ 
+
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <ul class="header-list">
+                <li>
+                    <div>thing 1</div><div class="arrow"></div>
+                </li>
+                <li>
+                    <div>thing 2</div><div class="arrow"></div>
+                </li>
+                <li>
+                    <div>thing 3</div><div class="arrow"></div>
+                </li>
+            </ul>
+        </div>
+    </body>
