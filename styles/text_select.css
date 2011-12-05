@@ -1,0 +1,23 @@
+html {
+        background-color: #EAEAD3;
+	height: 100%;
+}
+
+body {
+	margin:10px 0px;
+	padding:0px;
+	height: 100%;
+	text-align: center;
+}
+
+.para {
+	padding-bottom: 10px;
+}
+
+#message {
+	position: absolute;
+	left: 10%;
+	top: 10%;
+	width: 90%;
+	background-color: #F00;
+}
