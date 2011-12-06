@@ -6,25 +6,25 @@
             html {
                 font-size: 12.5pt;
             }
-            .header {
+            .module_header{
                 height: 29px;
             }
 
-            .header-list {
+            #grid_breadcrumb_list {
                 display: inline;
             }
 
-            .header-list li {
+            #grid_breadcrumb_list li {
                 display: inline;
             }
             
-            .header-list li:first-child div  {
+            #grid_breadcrumb_list li:first-child div  {
                 background-color: #151f40;
                 color: #fff;
             }
             
 
-            .header-list li div  {
+            #grid_breadcrumb_list li div  {
                 margin-left: 10px;
                 float: left;
                 border: none;
@@ -34,13 +34,13 @@
                 line-height: 30px;
             }
             
-            .header-list li div:not(.arrow)  {
+            #grid_breadcrumb_list li div:not(.arrow)  {
                 padding-left: 20px;
                 width: 85px;
                 margin-left: -12px;
             }
 
-            .header-list li div.arrow {
+            #grid_breadcrumb_list li div.arrow {
                 border: 1px solid #aaa;
                 border-bottom: none;
                 border-left: none;
@@ -53,11 +53,11 @@
                 margin-left: -11px;
             }
 
-            .header-list li:first-child div.arrow {
+            #grid_breadcrumb_list li:first-child div.arrow {
                 margin-left: 10px;
             }
 
-            .header-list li:first-child div:not(.arrow) {
+            #grid_breadcrumb_list li:first-child div:not(.arrow) {
                 margin-left:0;
                 margin-right:-21px;
                 position: relative;
@@ -72,8 +72,8 @@
         </style>
     </head>
     <body>
-        <div class="header">
-            <ul class="header-list">
+        <div class="module_header">
+            <ul id="grid_breadcrumb_list">
                 <li>
                     <div>thing 1</div><div class="arrow"></div>
                 </li>
