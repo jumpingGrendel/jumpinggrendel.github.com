@@ -12,6 +12,7 @@
     line-height: 2em;
     font-family: serif;
     font-size: 1.2em;
+    width: 60%;
   }
   span {
     margin-right: .5%;
@@ -22,38 +23,49 @@
   .asin {
     color: #00680C
   }
+  .read {
+    background-color: #d9d9e9;
+  }
   </style>
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssreset/cssreset-min.css">
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.4.1/build/cssfonts/cssfonts-min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var r = $('.read');
+        $("#mycount").text("I've read: " + r.length);
+      });
+    </script>
 </head>
 <body>
+  <h4 id="mycount"></h4>
   <ol>
-    <li>George Orwell - Nineteen Eighty-Four <span class="isbn">(014118776X)</span><a href="http://www.amazon.com/Nineteen-Eighty-Four-Penguin-Modern-Classics/dp/014118776X%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D014118776X">details</a>
+    <li class="read">George Orwell - Nineteen Eighty-Four <span class="isbn">(014118776X)</span><a href="http://www.amazon.com/Nineteen-Eighty-Four-Penguin-Modern-Classics/dp/014118776X%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D014118776X">details</a>
     </li>
 
     <li>George R. Stewart - Earth Abides <span class="isbn">(0449213013)</span><a href="http://www.amazon.com/Earth-Abides-George-R-Stewart/dp/0449213013%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0449213013">details</a>
 </li>
 
-    <li>Ray Bradbury - The Martian Chronicles <span class="isbn">(0809080451)</span><a href="http://www.amazon.com/Ray-Bradburys-Martian-Chronicles-Authorized/dp/0809080451%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0809080451">details</a>
+    <li class="read">Ray Bradbury - The Martian Chronicles <span class="isbn">(0809080451)</span><a href="http://www.amazon.com/Ray-Bradburys-Martian-Chronicles-Authorized/dp/0809080451%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0809080451">details</a>
 </li>
 
-    <li>Robert A. Heinlein - The Puppet Masters <span class="isbn">(143913376X)</span><a href="http://www.amazon.com/Puppet-Masters-Baen-Science-Fiction/dp/143913376X%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D143913376X">details</a>
+    <li class="read">Robert A. Heinlein - The Puppet Masters <span class="isbn">(143913376X)</span><a href="http://www.amazon.com/Puppet-Masters-Baen-Science-Fiction/dp/143913376X%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D143913376X">details</a>
 </li>
 
-    <li>John Wyndham - The Day of the Triffids <span class="isbn">(0345328175)</span><a href="http://www.amazon.com/Day-Triffids-John-Wyndham/dp/0345328175%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345328175">details</a>
+    <li class="read">John Wyndham - The Day of the Triffids <span class="isbn">(0345328175)</span><a href="http://www.amazon.com/Day-Triffids-John-Wyndham/dp/0345328175%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345328175">details</a>
 </li>
 
     <li>Bernard Wolfe - Limbo <span class="isbn">(1594161291)</span><a href="http://www.amazon.com/Limbo-America-Reads-Rediscovered-Nonfiction/dp/1594161291%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1594161291">details</a>
 </li>
 
-    <li>Alfred Bester - The Demolished Man <span class="isbn">(1857988221)</span><a href="http://www.amazon.com/DEMOLISHED-MAN-Alfred-Bester/dp/B00446J08E%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00446J08E">details</a>
+    <li class="read">Alfred Bester - The Demolished Man <span class="isbn">(1857988221)</span><a href="http://www.amazon.com/DEMOLISHED-MAN-Alfred-Bester/dp/B00446J08E%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00446J08E">details</a>
 </li>
 
-    <li>Ray Bradbury - Fahrenheit 451 <span class="asin">(B0001PIOX4)</span><a href="http://www.amazon.com/Fahrenheit-451-Ray-Bradbury/dp/B0001PIOX4%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0001PIOX4">details</a>
+    <li class="read">Ray Bradbury - Fahrenheit 451 <span class="asin">(B0001PIOX4)</span><a href="http://www.amazon.com/Fahrenheit-451-Ray-Bradbury/dp/B0001PIOX4%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB0001PIOX4">details</a>
 </li>
 
-    <li>Arthur C. Clarke - Childhoods End <span class="isbn">(0151172056)</span><a href="http://www.amazon.com/Childhoods-End-Arthur-C-Clarke/dp/0151172056%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0151172056">details</a>
+    <li class="read">Arthur C. Clarke - Childhoods End <span class="isbn">(0151172056)</span><a href="http://www.amazon.com/Childhoods-End-Arthur-C-Clarke/dp/0151172056%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0151172056">details</a>
 </li>
 
     <li>Charles L. Harness - The Paradox men <span class="asin">(B000KP8N8G)</span><a href="http://www.amazon.com/Paradox-Men-Charles-L-Harness/dp/B000KP8N8G%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB000KP8N8G">details</a>
@@ -68,7 +80,7 @@
     <li>Clifford D. Simak - Ring Around the Sun <span class="isbn">(0450032035)</span><a href="http://www.amazon.com/Ring-Around-Sun-Clifford-Simak/dp/0450032035%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0450032035">details</a>
 </li>
 
-    <li>Theodore Sturgeon - More than Human <span class="isbn">(0375703713)</span><a href="http://www.amazon.com/More-Than-Human-Theodore-Sturgeon/dp/0375703713%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0375703713">details</a>
+    <li class="read">Theodore Sturgeon - More than Human <span class="isbn">(0375703713)</span><a href="http://www.amazon.com/More-Than-Human-Theodore-Sturgeon/dp/0375703713%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0375703713">details</a>
 </li>
 
     <li>Hal Clement - Mission of Gravity <span class="isbn">(0575070943)</span><a href="http://www.amazon.com/Mission-Collectors-Gollancz-Collector-Editions/dp/0575070943%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0575070943">details</a>
@@ -86,7 +98,7 @@
     <li>William Golding - The Inheritors <span class="asin">(B002ECEU76)</span><a href="http://www.amazon.com/Inheritors-Harvest-Book-William-Golding/dp/B002ECEU76%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB002ECEU76">details</a>
 </li>
 
-    <li>Alfred Bester - The Stars My Destination <span class="isbn">(1857988140)</span><a href="http://www.amazon.com/Stars-My-Destination-Sf-Masterworks/dp/1857988140%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1857988140">details</a>
+    <li class="read">Alfred Bester - The Stars My Destination <span class="isbn">(1857988140)</span><a href="http://www.amazon.com/Stars-My-Destination-Sf-Masterworks/dp/1857988140%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1857988140">details</a>
 </li>
 
     <li>John Christopher - The Death of Grass <span class="asin">(B001QZ6XOA)</span><a href="http://www.amazon.com/Death-Grass-John-Christopher/dp/B001QZ6XOA%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB001QZ6XOA">details</a>
@@ -95,7 +107,7 @@
     <li>Arthur C. Clarke - The City and the Stars <span class="isbn">(1567231608)</span><a href="http://www.amazon.com/City-Stars-Arthur-C-Clarke/dp/1567231608%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1567231608">details</a>
 </li>
 
-    <li>Robert A. Heinlein - The Door Into Summer <span class="isbn">(0345330129)</span><a href="http://www.amazon.com/Door-into-Summer-Robert-Heinlein/dp/0345330129%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345330129">details</a>
+    <li class="read">Robert A. Heinlein - The Door Into Summer <span class="isbn">(0345330129)</span><a href="http://www.amazon.com/Door-into-Summer-Robert-Heinlein/dp/0345330129%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345330129">details</a>
 </li>
 
     <li>John Wyndham - The Midwich cuckoos <span class="asin">(B003XREM3S)</span><a href="http://www.amazon.com/Midwich-Cuckoos-RosettaBooks-Into-ebook/dp/B003XREM3S%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB003XREM3S">details</a>
@@ -107,19 +119,19 @@
     <li>James Blish - A Case of Conscience <span class="isbn">(0345438353)</span><a href="http://www.amazon.com/Case-Conscience-Del-Rey-Impact/dp/0345438353%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345438353">details</a>
 </li>
 
-    <li>Robert A. Heinlein - Have Space-Suit -- Will Travel <span class="isbn">(1416505490)</span><a href="http://www.amazon.com/Have-Space-Suit-Will-Travel/dp/1416505490%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1416505490">details</a>
+    <li class="read">Robert A. Heinlein - Have Space-Suit -- Will Travel <span class="isbn">(1416505490)</span><a href="http://www.amazon.com/Have-Space-Suit-Will-Travel/dp/1416505490%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1416505490">details</a>
 </li>
 
-    <li>Philip K. Dick - Time Out of Joint <span class="isbn">(0881843520)</span><a href="http://www.amazon.com/Time-Out-Joint-Philip-Dick/dp/0881843520%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0881843520">details</a>
+    <li class="read">Philip K. Dick - Time Out of Joint <span class="isbn">(0881843520)</span><a href="http://www.amazon.com/Time-Out-Joint-Philip-Dick/dp/0881843520%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0881843520">details</a>
 </li>
 
-    <li>Pat Frank - Alas Babylon <span class="isbn">(60741872)</span><a href="http://www.amazon.com/Alas-Babylon-Pat-Frank/dp/0060741872%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0060741872">details</a>
+    <li class="read">Pat Frank - Alas Babylon <span class="isbn">(60741872)</span><a href="http://www.amazon.com/Alas-Babylon-Pat-Frank/dp/0060741872%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0060741872">details</a>
 </li>
 
-    <li>Walter M. Miller - A Canticle for Leibowitz <span class="isbn">(60892994)</span><a href="http://www.amazon.com/Canticle-Leibowitz-Walter-Miller-Jr/dp/0060892994%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0060892994">details</a>
+    <li class="read">Walter M. Miller - A Canticle for Leibowitz <span class="isbn">(60892994)</span><a href="http://www.amazon.com/Canticle-Leibowitz-Walter-Miller-Jr/dp/0060892994%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0060892994">details</a>
 </li>
 
-    <li>Kurt Vonnegut - The Sirens of Titan <span class="asin">(B003XREM5G)</span><a href="http://www.amazon.com/Sirens-Titan-Kurt-Vonnegut-ebook/dp/B003XREM5G%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB003XREM5G">details</a>
+    <li class="read">Kurt Vonnegut - The Sirens of Titan <span class="asin">(B003XREM5G)</span><a href="http://www.amazon.com/Sirens-Titan-Kurt-Vonnegut-ebook/dp/B003XREM5G%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB003XREM5G">details</a>
 </li>
 
     <li>Algis Budrys - Rogue Moon <span class="isbn">(0899683347)</span><a href="http://www.amazon.com/Rogue-Moon-Algis-Budrys/dp/0899683347%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0899683347">details</a>
@@ -134,19 +146,19 @@
     <li>J.G. Ballard - The Drowned World <span class="isbn">(7221835)</span><a href="http://www.amazon.com/Drowned-World-J-G-Ballard/dp/0007221835%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0007221835">details</a>
 </li>
 
-    <li>Anthony Burgess - A Clockwork Orange <span class="isbn">(0345354435)</span><a href="http://www.amazon.com/Clockwork-Orange-Anthony-Burgess/dp/0345354435%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345354435">details</a>
+    <li class="read">Anthony Burgess - A Clockwork Orange <span class="isbn">(0345354435)</span><a href="http://www.amazon.com/Clockwork-Orange-Anthony-Burgess/dp/0345354435%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345354435">details</a>
 </li>
 
-    <li>Philip K. Dick - The Man in the High Castle <span class="isbn">(0141186674)</span><a href="http://www.amazon.com/High-Castle-Penguin-Modern-Classics/dp/0141186674%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0141186674">details</a>
+    <li class="read">Philip K. Dick - The Man in the High Castle <span class="isbn">(0141186674)</span><a href="http://www.amazon.com/High-Castle-Penguin-Modern-Classics/dp/0141186674%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0141186674">details</a>
 </li>
 
     <li>Robert Sheckley - Journey Beyond Tomorrow <span class="isbn">(0575041226)</span><a href="http://www.amazon.com/Journey-Beyond-Tomorrow-Gollancz-classic/dp/0575041226%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0575041226">details</a>
 </li>
 
-    <li>Clifford D. Simak - Way Station <span class="isbn">(20248717)</span><a href="http://www.amazon.com/Station-Collier-Nucleus-Science-Classics/dp/0020248717%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0020248717">details</a>
+    <li class="read">Clifford D. Simak - Way Station <span class="isbn">(20248717)</span><a href="http://www.amazon.com/Station-Collier-Nucleus-Science-Classics/dp/0020248717%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0020248717">details</a>
 </li>
 
-    <li>Kurt Vonnegut - Cats Cradle <span class="isbn">(038533348X)</span><a href="http://www.amazon.com/Cats-Cradle-Novel-Kurt-Vonnegut/dp/038533348X%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D038533348X">details</a>
+    <li class="read">Kurt Vonnegut - Cats Cradle <span class="isbn">(038533348X)</span><a href="http://www.amazon.com/Cats-Cradle-Novel-Kurt-Vonnegut/dp/038533348X%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D038533348X">details</a>
 </li>
 
     <li>Brian W. Aldiss - Greybeard <span class="isbn">(0706608461)</span><a href="http://www.amazon.com/Greybeard-Brian-W-Aldiss/dp/0706608461%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0706608461">details</a>
@@ -155,27 +167,27 @@
     <li>William S. Burroughs - Nova Express <span class="isbn">(0802133304)</span><a href="http://www.amazon.com/Nova-Express-William-S-Burroughs/dp/0802133304%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0802133304">details</a>
 </li>
 
-    <li>Philip K. Dick - Martian Time-Slip <span class="isbn">(0345344448)</span><a href="http://www.amazon.com/Martian-Time-Slip-Philip-K-Dick/dp/0345344448%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345344448">details</a>
+    <li class="read">Philip K. Dick - Martian Time-Slip <span class="isbn">(0345344448)</span><a href="http://www.amazon.com/Martian-Time-Slip-Philip-K-Dick/dp/0345344448%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345344448">details</a>
 </li>
 
-    <li>Philip K. Dick - The Three Stigmata of Palmer Eldritch <span class="isbn">(0586045848)</span><a href="http://www.amazon.com/THREE-STIGMATA-PALMER-ELDRITCH/dp/0586045848%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0586045848">details</a>
+    <li class="read">Philip K. Dick - The Three Stigmata of Palmer Eldritch <span class="isbn">(0586045848)</span><a href="http://www.amazon.com/THREE-STIGMATA-PALMER-ELDRITCH/dp/0586045848%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0586045848">details</a>
 </li>
 
-    <li>Fritz Leiber - The Wanderer <span class="isbn">(1585860492)</span><a href="http://www.amazon.com/Wanderer-Fritz-Leiber/dp/1585860492%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1585860492">details</a>
+    <li class="read">Fritz Leiber - The Wanderer <span class="isbn">(1585860492)</span><a href="http://www.amazon.com/Wanderer-Fritz-Leiber/dp/1585860492%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1585860492">details</a>
 </li>
 
     <li>Cordwainer Smith - Nostrilia</li>
 
-    <li>Philip K. Dick - Dr Bloodmoney <span class="isbn">(0375719296)</span><a href="http://www.amazon.com/Dr-Bloodmoney-Philip-K-Dick/dp/0375719296%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0375719296">details</a>
+    <li class="read">Philip K. Dick - Dr Bloodmoney <span class="isbn">(0375719296)</span><a href="http://www.amazon.com/Dr-Bloodmoney-Philip-K-Dick/dp/0375719296%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0375719296">details</a>
 </li>
 
-    <li>Frank Herbert - Dune <span class="isbn">(0399128964)</span><a href="http://www.amazon.com/Dune-Frank-Herbert/dp/0399128964%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0399128964">details</a>
+    <li class="read">Frank Herbert - Dune <span class="isbn">(0399128964)</span><a href="http://www.amazon.com/Dune-Frank-Herbert/dp/0399128964%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0399128964">details</a>
 </li>
 
     <li>J.G. Ballard - The Crystal World <span class="isbn">(0374520968)</span><a href="http://www.amazon.com/Crystal-World-J-G-Ballard/dp/0374520968%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0374520968">details</a>
 </li>
 
-    <li>Harry Harrison - Make Room! Make Room!</li>
+    <li class="read">Harry Harrison - Make Room! Make Room!</li>
 
     <li>Daniel Keyes - Flowers for Algernon <span class="isbn">(0156030306)</span><a href="http://www.amazon.com/Flowers-Algernon-Daniel-Keyes/dp/0156030306%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0156030306">details</a>
 </li>
@@ -183,13 +195,13 @@
     <li>Roger Zelazny - The Dream Master <span class="isbn">(0739445316)</span><a href="http://www.amazon.com/Dream-Master-Roger-Zelazny/dp/0739445316%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0739445316">details</a>
 </li>
 
-    <li>John Brunner - Stand on Zanzibar <span class="isbn">(0345312120)</span><a href="http://www.amazon.com/Stand-Zanzibar-John-Brunner/dp/0345312120%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345312120">details</a>
+    <li class="read">John Brunner - Stand on Zanzibar <span class="isbn">(0345312120)</span><a href="http://www.amazon.com/Stand-Zanzibar-John-Brunner/dp/0345312120%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0345312120">details</a>
 </li>
 
     <li>Samuel R. Delany - Nova <span class="asin">(B002HIG6MY)</span><a href="http://www.amazon.com/Nova-Samuel-R-Delany/dp/B002HIG6MY%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB002HIG6MY">details</a>
 </li>
 
-    <li>Philip K. Dick - Do Androids Dream of Electric Sheep?</li>
+    <li class="read">Philip K. Dick - Do Androids Dream of Electric Sheep?</li>
 
     <li>Thomas M. Disch - Camp Concentration <span class="isbn">(0375705457)</span><a href="http://www.amazon.com/Camp-Concentration-Thomas-M-Disch/dp/0375705457%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0375705457">details</a>
 </li>
@@ -203,7 +215,7 @@
     <li>Angela Carter - Heroes and Villains <span class="isbn">(0140234640)</span><a href="http://www.amazon.com/Heroes-Villains-Angela-Carter/dp/0140234640%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0140234640">details</a>
 </li>
 
-    <li>Ursula K. Le Guin - The Left Hand of Darkness <span class="isbn">(60125748)</span><a href="http://www.amazon.com/Left-Hand-Darkness-Ursula-Guin/dp/0060125748%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0060125748">details</a>
+    <li class="read">Ursula K. Le Guin - The Left Hand of Darkness <span class="isbn">(60125748)</span><a href="http://www.amazon.com/Left-Hand-Darkness-Ursula-Guin/dp/0060125748%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0060125748">details</a>
 </li>
 
     <li>Bob Shaw - The Palace of Eternity <span class="isbn">(0575004614)</span><a href="http://www.amazon.com/Palace-Eternity-Bob-Shaw/dp/0575004614%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0575004614">details</a>
@@ -224,7 +236,7 @@
     <li>Thomas M. Disch - 334 <span class="isbn">(0375705449)</span><a href="http://www.amazon.com/334-Novel-Thomas-M-Disch/dp/0375705449%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0375705449">details</a>
 </li>
 
-    <li>Gene Wolfe - The Fifth Head of Cerberus <span class="isbn">(0312890206)</span><a href="http://www.amazon.com/Fifth-Head-Cerberus-Three-Novellas/dp/0312890206%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0312890206">details</a>
+    <li class="read">Gene Wolfe - The Fifth Head of Cerberus <span class="isbn">(0312890206)</span><a href="http://www.amazon.com/Fifth-Head-Cerberus-Three-Novellas/dp/0312890206%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0312890206">details</a>
 </li>
 
     <li>Michael Moorcock - The Dancers at the End of Time <span class="isbn">(0575074760)</span><a href="http://www.amazon.com/Dancers-End-Time-S-F-Masterworks/dp/0575074760%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0575074760">details</a>
@@ -266,10 +278,10 @@
     <li>Kingsley Amis - The Alteration <span class="isbn">(0586044965)</span><a href="http://www.amazon.com/Alteration-Kingsley-Amis/dp/0586044965%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0586044965">details</a>
 </li>
 
-    <li>Marge Piercy - Woman on the Edge of Time <span class="isbn">(0449210820)</span><a href="http://www.amazon.com/Woman-Edge-Time-Marge-Piercy/dp/0449210820%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0449210820">details</a>
+    <li class="read">Marge Piercy - Woman on the Edge of Time <span class="isbn">(0449210820)</span><a href="http://www.amazon.com/Woman-Edge-Time-Marge-Piercy/dp/0449210820%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0449210820">details</a>
 </li>
 
-    <li>Frederik Pohl - Man Plus <span class="isbn">(0765321785)</span><a href="http://www.amazon.com/Man-Plus-Frederik-Pohl/dp/0765321785%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0765321785">details</a>
+    <li class="read">Frederik Pohl - Man Plus <span class="isbn">(0765321785)</span><a href="http://www.amazon.com/Man-Plus-Frederik-Pohl/dp/0765321785%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0765321785">details</a>
 </li>
 
     <li>Algis Budrys - Michaelmas <span class="isbn">(0445203161)</span><a href="http://www.amazon.com/Michaelmas-Algis-Budrys/dp/0445203161%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0445203161">details</a>
@@ -293,16 +305,16 @@
     <li>Kate Wilhelm - Juniper Time <span class="isbn">(60804769)</span><a href="http://www.amazon.com/JUNIPER-TIME-Kate-Wilhelm/dp/B004MKG5IK%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB004MKG5IK">details</a>
 </li>
 
-    <li>Gregory Benford - Timescape <span class="isbn">(0553297090)</span><a href="http://www.amazon.com/Timescape-Gregory-Benford/dp/0553297090%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0553297090">details</a>
+    <li class="read">Gregory Benford - Timescape <span class="isbn">(0553297090)</span><a href="http://www.amazon.com/Timescape-Gregory-Benford/dp/0553297090%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0553297090">details</a>
 </li>
 
     <li>Damien Broderick - The Dreaming Dragons <span class="isbn">(067183150X)</span><a href="http://www.amazon.com/Dreaming-Dragons-Damien-Broderick/dp/067183150X%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D067183150X">details</a>
 </li>
 
-    <li>Octavia Butler - Wild Seed <span class="isbn">(0575071451)</span><a href="http://www.amazon.com/Wild-Seed-Vgsf-Octavia-Butler/dp/0575071451%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0575071451">details</a>
+    <li class="read">Octavia Butler - Wild Seed <span class="isbn">(0575071451)</span><a href="http://www.amazon.com/Wild-Seed-Vgsf-Octavia-Butler/dp/0575071451%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0575071451">details</a>
 </li>
 
-    <li>Russell Hoban - Riddley Walker <span class="isbn">(0671421476)</span><a href="http://www.amazon.com/Riddley-Walker-novel-Russell-Hoban/dp/0671421476%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0671421476">details</a>
+    <li class="read">Russell Hoban - Riddley Walker <span class="isbn">(0671421476)</span><a href="http://www.amazon.com/Riddley-Walker-novel-Russell-Hoban/dp/0671421476%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0671421476">details</a>
 </li>
 
     <li>John Sladek - Roderick and Roderick at Random <span class="isbn">(0948893435)</span><a href="http://www.amazon.com/Roderick-at-Random-John-Sladek/dp/0948893435%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0948893435">details</a>
@@ -323,7 +335,7 @@
     <li>John Calvin Batchelor - The Birth of the Peoples Republic of Antarctica <span class="isbn">(0805037861)</span><a href="http://www.amazon.com/Birth-Peoples-Republic-Antarctica-Novel/dp/0805037861%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0805037861">details</a>
 </li>
 
-    <li>William Gibson - Neuromancer <span class="isbn">(6480411)</span><a href="http://www.amazon.com/Neuromancer-William-Gibson/dp/0006480411%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0006480411">details</a>
+    <li class="read">William Gibson - Neuromancer <span class="isbn">(6480411)</span><a href="http://www.amazon.com/Neuromancer-William-Gibson/dp/0006480411%3FSubscriptionId%3DAKIAID3225DWR2SUPNPQ%26tag%3Dgrumpetnet-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0006480411">details</a>
 </li>
   </ol>
 </body>
