@@ -12,3 +12,6 @@ def oops():
 
 def flip():
     print "whee"
+
+def whip():
+    return "huh"
