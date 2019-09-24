@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title>Web Notify Bug Bash</title>
+<meta charset="UTF-8">
+</head>
+<body>
+
+<!-- INSERT SNIPPET HERE -->
+<!-- END SNIPPET -->
+<h2>Web Notify Bug Bash Test Page</h2>
+<p>
+Thanks for testing!
+</p>
+
+<p>
+<button id="register">Sign up for notifications</button>
+<script>
+   document.getElementById('register').addEventListener('click', function(){
+     UA.then(sdk => {
+      sdk.register()
+     })
+   })
+</script>
+</p>
+
+<h2>Log:</h2>
+
+<pre id="log">
+</pre>
+
+  <script type="text/javascript">
+// 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1569356064.9566429
+!function(n,t,c,e,u){function r(n){try{f=n(u)}catch(n){return h=n,void i(p,n)}i(s,f)}function i(n,t){for(var c=0;c<n.length;c++)d(n[c],t);
+}function o(n,t){return n&&(f?d(n,f):s.push(n)),t&&(h?d(t,h):p.push(t)),l}function a(n){return o(!1,n)}function d(t,c){
+n.setTimeout(function(){t(c)},0)}var f,h,s=[],p=[],l={then:o,catch:a,_setup:r};n[e]=l;var v=t.createElement("script");
+v.src=c,v.async=!0,v.id="_uasdk",v.rel=e,t.head.appendChild(v)}(window,document,'https://aswpsdkus.com/notify/v1/ua-sdk.min.js',
+  'UA', {
+    
+    // Only needed when used on insecure hosts:
+    // secureIframeUrl: 'https://your.secure.domain/path/to/web-push-secure-bridge.html',
+
+    vapidPublicKey: 'BPE7i90IzAB5oxWmp_gYslfiuWyAwyGiT8kz4y12UWBnKwm73GTAY1SZlrUgAur0WrrhUWRXz5y3CzeYMtJ5JqQ=',
+    appKey: 'aPvmiLsDQG6h8zFNeW4VzQ',
+    token: 'MTphUHZtaUxzRFFHNmg4ekZOZVc0VnpROk41bllSUS1SVTdhT1EzNU1peG1EbG1MR3hYU0NaSy1OZjJQUkdCT0dMWkk'
+  });
+UA.then(sdk => {
+  if (sdk.channel) {
+    log.innerHTML = log.innerHTML + 'Has channel: ' + sdk.channel.id + '\n'
+  }
+
+  sdk.addEventListener('channel', ev => {
+    log = document.getElementById('log')
+    log.innerHTML = log.innerHTML + 'Got channel: ' + ev.channel.id + '\n'
+  })
+
+  sdk.addEventListener('push', ev => {
+    log = document.getElementById('log')
+    log.innerHTML = log.innerHTML + 'Got push:\n' + JSON.stringify(ev.push, null, 2) + '\n'
+  })
+})
+</script>
