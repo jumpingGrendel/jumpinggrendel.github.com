@@ -1,10 +1,10 @@
-// 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1569356064.9566429
+// 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1574197052.3867342
 importScripts('https://aswpsdkus.com/notify/v1/ua-sdk.min.js')
 uaSetup.worker(self, {
-  defaultIcon: 'https://res\u002D5.cloudinary.com/crunchbase\u002Dproduction/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/w4n7ive2c3mwporkodk3',
-  defaultTitle: 'Branch Test',
-  defaultActionURL: 'https://www.branch.io/',
-  appKey: 'aPvmiLsDQG6h8zFNeW4VzQ',
-  token: 'MTphUHZtaUxzRFFHNmg4ekZOZVc0VnpROk41bllSUS1SVTdhT1EzNU1peG1EbG1MR3hYU0NaSy1OZjJQUkdCT0dMWkk',
-  vapidPublicKey: 'BPE7i90IzAB5oxWmp_gYslfiuWyAwyGiT8kz4y12UWBnKwm73GTAY1SZlrUgAur0WrrhUWRXz5y3CzeYMtJ5JqQ='
+  defaultIcon: 'https://company\u002D27420.frontify.com/d/R3WvylCS1wiq/mparticle\u002Dbrand\u002Dassets/',
+  defaultTitle: 'mParticle',
+  defaultActionURL: 'https://www.mparticle.com/',
+  appKey: 'dfnmtrTxQIWfjmoe9VPjxw',
+  token: 'MTpkZm5tdHJUeFFJV2ZqbW9lOVZQanh3OmZ5T0lvR1l4aWxOdkNxU1BnY1dsMWNJNUhkTHo3UjZWcy13bUk0SXlKcDA',
+  vapidPublicKey: 'BL4MvWtoV4V_6votTgQiooMg5a9V6Dv2AheuqNqsacf-e2LD-5v_AlOm1N8uYZctFKuxBh9kh-WaFls0pCZyBNg='
 })
