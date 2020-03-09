@@ -1,10 +1,12 @@
-// 86acbd31cd7c09cf30acb66d2fbedc91daa48b86:1574197052.3867342
+// UA Web Push: 0b3d476922:1569603225255
 importScripts('https://aswpsdkus.com/notify/v1/ua-sdk.min.js')
 uaSetup.worker(self, {
-  defaultIcon: 'https://company\u002D27420.frontify.com/d/R3WvylCS1wiq/mparticle\u002Dbrand\u002Dassets/',
-  defaultTitle: 'mParticle',
-  defaultActionURL: 'https://www.mparticle.com/',
-  appKey: 'dfnmtrTxQIWfjmoe9VPjxw',
-  token: 'MTpkZm5tdHJUeFFJV2ZqbW9lOVZQanh3OmZ5T0lvR1l4aWxOdkNxU1BnY1dsMWNJNUhkTHo3UjZWcy13bUk0SXlKcDA',
-  vapidPublicKey: 'BL4MvWtoV4V_6votTgQiooMg5a9V6Dv2AheuqNqsacf-e2LD-5v_AlOm1N8uYZctFKuxBh9kh-WaFls0pCZyBNg='
+  workerUrl: '/push-worker.js',
+  
+  defaultIcon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Urban_Airship_Logo.jpg/220px-Urban_Airship_Logo.jpg',
+  defaultTitle: 'UA Web Push: Prod',
+  defaultActionURL: 'https://go.urbanairship.com',
+  appKey: 'ISex_TTJRuarzs9-o_Gkhg',
+  token: 'MTpJU2V4X1RUSlJ1YXJ6czktb19Ha2hnOkZyc3F4THdzVzNUWDBnZkZMZ2MwTG9BY2dkQ0t0STR2VnJ6Tm9lS2QtZGM',
+  vapidPublicKey: 'BFAX8NDGwnWeDbTsGjn6TpCmY6uoJ8SXrexaQR3MR+OU6TwbbjgWDKaZuxturl2CvbU7QTOb4NiD5w1YxOMoLB4='
 })
