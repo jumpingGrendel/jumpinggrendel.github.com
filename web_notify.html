@@ -171,6 +171,57 @@ Custom event sent:
                 console.log('STILL BAD', e)
             })
 
-        </script>
+            var optimoveSDKToken = 'c8bcd75214d35b386d74f4c76c3cb3aca3adab0329413963c733d80fe5384c0e';
+            var optimoveSDKVersion = '1.0.7';
+            var optimoveSDKconfigVersion = 'shopify.1.0.0';
+            // ---------------------------------------
+            // Function: createOptimoveSDK
+            // Args: resourceURL, callback
+            // creates JS script that is async
+            // ---------------------------------------
+            function createOptimoveSDK(resourceURL, callback) {
+            
+            console.log('In createOptimoveSDK() '+resourceURL); 
+
+            if (resourceURL != null) {
+                var d = document;
+                var g = d.createElement('script');
+                var s = d.getElementsByTagName('script')[0];
+
+                g.type = 'text/javascript';
+                g.async = true;
+                g.defer = true;
+                g.src = resourceURL;
+                g.onload = callback;
+
+                s.parentNode.insertBefore(g, s);
+            }
+            }
+
+            // ---------------------------------------
+            // Function: initializeOptimoveSDK
+            // Args: --
+            // initializes optimove SDK with sdk details provided to you by Product Integration team
+            // ---------------------------------------
+            function initializeOptimoveSDK() {
+            
+            console.log('In initializeOptimoveSDK()');
+
+            optimoveSDK.initialize(optimoveSDKToken, optimoveSDKconfigVersion, loadOptimoveSDKFunctions, 'info');
+            }
+
+            // ---------------------------------------
+            // Function: loadOptimoveSDKFunctions
+            // Args: status
+            // Use this function to trigger GTM tags that will run Optimove SDK functions
+            // ---------------------------------------
+            function loadOptimoveSDKFunctions(status) {
+
+            console.log('In loadOptimoveSDKFunctions()  = ' + status);
+            }
+
+            createOptimoveSDK('https://sdk-cdn.optimove.net/websdk/sdk-v'+optimoveSDKVersion+'.js', initializeOptimoveSDK);
+
+</script>
     </body>
 </html>
