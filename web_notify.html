@@ -204,10 +204,8 @@ Custom event sent:
             // initializes optimove SDK with sdk details provided to you by Product Integration team
             // ---------------------------------------
             function initializeOptimoveSDK() {
-            
-            console.log('In initializeOptimoveSDK()');
-
-            optimoveSDK.initialize(optimoveSDKToken, optimoveSDKconfigVersion, loadOptimoveSDKFunctions, 'info');
+                console.log('In initializeOptimoveSDK()');
+                optimoveSDK.initialize(optimoveSDKToken, optimoveSDKconfigVersion, loadOptimoveSDKFunctions, 'info');
             }
 
             // ---------------------------------------
@@ -216,12 +214,11 @@ Custom event sent:
             // Use this function to trigger GTM tags that will run Optimove SDK functions
             // ---------------------------------------
             function loadOptimoveSDKFunctions(status) {
-
-            console.log('In loadOptimoveSDKFunctions()  = ' + status);
+                console.log('In loadOptimoveSDKFunctions()  = ' + status);
+                optimoveSDK.API.reportEvent('Rando_Event', {ua_channel_id:sdk.channel})
             }
 
             createOptimoveSDK('https://sdk-cdn.optimove.net/websdk/sdk-v'+optimoveSDKVersion+'.js', initializeOptimoveSDK);
-            optimoveSDK.API.reportEvent('Rando_Event', {ua_channel_id:sdk.channel})
 
 </script>
     </body>
