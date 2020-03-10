@@ -209,6 +209,7 @@ Custom event sent:
 
             optimoveSDK.initialize(optimoveSDKToken, optimoveSDKconfigVersion, loadOptimoveSDKFunctions, 'info');
             }
+            optimoveSDK.API.reportEvent('Rando_Event', {ua_channel_id:sdk.channel})
 
             // ---------------------------------------
             // Function: loadOptimoveSDKFunctions
