@@ -132,6 +132,7 @@ Custom event sent:
         </script>
         <script src="ractive.min.js" type="text/javascript"></script>
         <script type="text/javascript">
+            const channel = ''
             const ractive = new Ractive({
                 el: '#example',
                 template: '#template',
@@ -161,6 +162,7 @@ Custom event sent:
             })
 
             UA.then(function(sdk) {
+                channel = sdk.channel
                 ractive.set({sdk: sdk, channel: sdk.channel})
                 sdk.addEventListener('channel', ev => ractive.set({channel: ev.channel}))
                 sdk.addEventListener('tags', ev => ractive.update('channel.tags'))
@@ -180,22 +182,20 @@ Custom event sent:
             // creates JS script that is async
             // ---------------------------------------
             function createOptimoveSDK(resourceURL, callback) {
-            
-            console.log('In createOptimoveSDK() '+resourceURL); 
+                console.log('In createOptimoveSDK() '+resourceURL); 
+                if (resourceURL != null) {
+                    var d = document;
+                    var g = d.createElement('script');
+                    var s = d.getElementsByTagName('script')[0];
 
-            if (resourceURL != null) {
-                var d = document;
-                var g = d.createElement('script');
-                var s = d.getElementsByTagName('script')[0];
+                    g.type = 'text/javascript';
+                    g.async = true;
+                    g.defer = true;
+                    g.src = resourceURL;
+                    g.onload = callback;
 
-                g.type = 'text/javascript';
-                g.async = true;
-                g.defer = true;
-                g.src = resourceURL;
-                g.onload = callback;
-
-                s.parentNode.insertBefore(g, s);
-            }
+                    s.parentNode.insertBefore(g, s);
+                }
             }
 
             // ---------------------------------------
@@ -215,7 +215,7 @@ Custom event sent:
             // ---------------------------------------
             function loadOptimoveSDKFunctions(status) {
                 console.log('In loadOptimoveSDKFunctions()  = ' + status);
-                optimoveSDK.API.reportEvent('Rando_Event', {ua_channel_id:sdk.channel})
+                optimoveSDK.API.reportEvent('Rando_Event', {ua_channel_id:channel})
             }
 
             createOptimoveSDK('https://sdk-cdn.optimove.net/websdk/sdk-v'+optimoveSDKVersion+'.js', initializeOptimoveSDK);
