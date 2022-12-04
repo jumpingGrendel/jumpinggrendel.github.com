@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <script>
+            var movies = ["Jeanne Dielman, 23 Quai du Commerce, 1080 Bruxelles", "Vertigo", "Citizen Kane", "Tokyo Story", "In the Mood for Love", "2001: A Space Odyssey", "Beau travail", "Mulholland Dr.", "Man with a Movie Camera", "Singin' in the Rain", "Sunrise: A Song of Two Humans", "The Godfather", "La Règle du jeu", "Cléo from 5 to 7", "The Searchers", "Meshes of the Afternoon", "Close-up", "Persona", "Apocalypse Now", "Seven Samurai", "The Passion of Joan of Arc", "Late Spring", "Playtime", "Do the Right Thing", "Au hasard Balthazar", "The Night of the Hunter", "Shoah", "Daisies", "Taxi Driver", "Portrait of a Lady on Fire", "8½", "Mirror", "Psycho", "L'Atalante", "Pather Panchali", "City Lights", "M", "À bout de souffle", "Some Like It Hot", "Rear Window", "Bicycle Thieves", "Rashomon", "Stalker", "Killer of Sheep", "Barry Lyndon", "The Battle of Algiers", "North by Northwest", "Ordet", "Wanda", "The 400 Blows", "The Piano", "Fear Eats the Soul", "News from Home", "Le Mépris", "Blade Runner", "Battleship Potemkin", "The Apartment", "Sherlock Jr.", "Sans Soleil", "La dolce vita", "Moonlight", "Daughters of the Dust", "GoodFellas", "The Third Man", "Casablanca", "Touki Bouki", "Andrei Rublev", "La Jetée", "The Red Shoes", "The Gleaners and I", "Metropolis", "L'avventura", "Journey to Italy", "My Neighbour Totoro", "Spirited Away", "Imitation of Life", "Sansho the Bailiff", "Sunset Blvd.", "Sátántangó", "A Brighter Summer Day", "Modern Times", "A Matter of Life and Death", "Céline and Julie Go Boating", "Blue Velvet", "The Spirit of the Beehive", "Pierrot le fou", "Histoire(s) du Cinéma", "The Shining", "CHUNGKING EXPRESS", "Parasite", "Yi Yi", "Ugetsu Monogatari", "The Leopard", "Madame de...", "A Man Escaped", "Once upon a Time in the West", "Tropical Malady", "Black Girl", "The General", "Get Out"]
+            
+            var pick_movie = function() {
+                random_integer = Math.floor(Math.random() * movies.length) - 1;
+                var display = document.getElementById("your_movie");
+                display.innerHTML = "#" + (random_integer + 1) + ": " + movies[random_integer]
+            }
+            var show_movies = function() {
+                var ul = document.getElementById("all_movies");
+                for(var n=0;n<movies.length;n++) {
+                    var li = document.createElement("li");
+                    var te = document.createTextNode(movies[n])
+                    li.appendChild(te)
+                    ul.appendChild(li)
+                }
+            }
+        </script>
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+        <style>
+            ol {
+            columns: 4;
+            -webkit-columns: 4;
+            -moz-columns: 4;
+            }
+            #picker div{
+                height: 15%;
+            }
+            #picker button{
+                height: 9%;
+                width: 75%;
+            }
+            #picker{
+                margin: auto;
+                width: 25%;
+                text-align: center;
+                font-size: large;
+                color: blue;
+            }
+            #picker #your_movie {
+                margin-top: 10%;
+            }
+
+        </style>
+    </head>
+    <body onload="show_movies();pick_movie()">
+        <div id="picker">
+            <button onclick="pick_movie()">Click to pick!</button><br>
+            <div id="your_movie"></div>
+        </div>
+        <div>
+            <ol id="all_movies">
+            </ol>
+        </div>
+    </body>
+
+</html>
