@@ -10,6 +10,7 @@
             var pick_movie = function() {
                 random_integer = Math.floor(Math.random() * movies.length) - 1;
                 var display = document.getElementById("your_movie");
+                display.innerHTML = "";
                 display.innerHTML = "#" + (random_integer + 1) + ": " + movies[random_integer]
             }
             var show_movies = function() {
