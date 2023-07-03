@@ -19,7 +19,10 @@
                 var display = document.getElementById("your_movie");
                 display.style.backgroundImage = "";
                 display.innerHTML = "";
-                display.innerHTML = "#" + (random_integer + 1) + ": " + movies[random_integer]
+                var current_film = movies[random_integer]
+                var movie_payload = "#" + (random_integer + 1) + ": " + current_film
+                movie_payload += "&nbsp;<a target=\"_blank\"  href=\"https://www.imdb.com/find/?q=" + current_film + "\"><img class=\"icon\" src=\"https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/IMDb_Logo_Square.svg/2048px-IMDb_Logo_Square.svg.png\"></a>"
+                display.innerHTML = movie_payload
             }
 
 
@@ -42,6 +45,14 @@
             -webkit-columns: 2;
             -moz-columns: 2;
             column-gap: 10%;
+            text-align: left;
+            margin: auto;
+            list-style-position: inside;
+            width: 90%;
+            height: 180%;
+            }
+            .all {
+                margin: auto;
             }
             #picker div{
                 height: 15%;
@@ -74,15 +85,19 @@
                 background-position: center;
                 background-size: contain;
             }
+            .icon {
+                height: 25px;
+                width: 25px;
+            }
 
         </style>
     </head>
     <body onload="show_movies()">
         <div id="picker">
-            <button onclick="pick_movie()">Click to pick!</button><br>
+            <button onclick="pick_movie()">Click to pick from the BFI poll</button><br>
             <div id="your_movie"></div>
         </div>
-        <div>
+        <div class="all">
             <ol id="all_movies">
             </ol>
         </div>
