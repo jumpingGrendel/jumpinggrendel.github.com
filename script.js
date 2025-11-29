@@ -1,4 +1,17 @@
 const STORAGE_KEY = "license-plate-game-state";
+const HISTORY_KEY = "license-plate-game-history";
+
+function archiveExpiredGame(state) {
+    if (!state || !state.date) return;
+    try {
+        let history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "{}");
+        history[state.date] = state;
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+        console.log("Archived game for " + state.date);
+    } catch (e) {
+        console.error("Failed to archive game", e);
+    }
+}
 
 function getGameState() {
     const stateStr = localStorage.getItem(STORAGE_KEY);
@@ -6,8 +19,11 @@ function getGameState() {
 
     try {
         const state = JSON.parse(stateStr);
-        // Check expiration
-        if (new Date().getTime() > state.expires) {
+        // Check if state belongs to today's puzzle
+        // We use today_solution.date which is injected in index.html
+        if (typeof today_solution !== 'undefined' && state.date !== today_solution.date) {
+            console.log("Found expired game state from " + state.date);
+            archiveExpiredGame(state);
             localStorage.removeItem(STORAGE_KEY);
             return null;
         }
@@ -17,17 +33,40 @@ function getGameState() {
     }
 }
 
-function saveGameState(tries, won, guesses) {
-    const d = new Date();
-    d.setUTCHours(24, 0, 0, 0); // Next Midnight UTC
+function saveGameState(tries, won, guesses, score) {
+    if (typeof today_solution === 'undefined') return;
 
     const state = {
+        date: today_solution.date,
         tries: tries,
         won: won,
         guesses: guesses || [],
-        expires: d.getTime()
+        score: score || 0
     };
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+}
+
+function calculateScore(guesses, won, wonByLongest) {
+    let score = 0;
+
+    // Penalties and Bonuses from guesses
+    const wrongGuesses = guesses.filter(g => !g.correct).length;
+    const validNonWinning = guesses.filter(g => g.correct && !g.special).length;
+
+    score -= (wrongGuesses * 10);
+    score += (validNonWinning * 5);
+
+    // Win Bonus
+    if (won) {
+        if (wonByLongest) {
+            score += 100;
+        } else {
+            score += 85; // Shortest
+        }
+    }
+
+    // Cap at 100, Min at 0
+    return Math.max(0, Math.min(100, score));
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -44,6 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let triesLeft = state ? state.tries : MAX_TRIES;
     let hasWon = state ? state.won : false;
     let guesses = state ? (state.guesses || []) : [];
+    let currentScore = state ? (state.score || 0) : 0;
 
     var clue = clue_and_solution["key"];
     var clue_span = document.getElementById("clue");
@@ -55,40 +95,47 @@ document.addEventListener('DOMContentLoaded', function () {
     var solutionForm = document.getElementById("solution");
     var triesSpan = document.getElementById("tries");
     var reviewContainer = document.getElementById("game-review");
+    var scoreSpan = document.getElementById("score");
+    var historyButton = document.getElementById("historyButton");
+    var historyModalBody = document.getElementById("historyModalBody");
 
-    function updateTriesDisplay() {
+    function updateUI() {
         if (triesSpan) {
             triesSpan.innerText = "Tries remaining: " + triesLeft;
         }
+        if (scoreSpan) {
+            scoreSpan.innerText = currentScore;
+        }
+        showGameReview();
     }
 
     function showGameReview() {
         if (!reviewContainer) return;
 
-        let html = '<div class="mt-4 card"><div class="card-body">';
-        html += '<h5 class="card-title">Game Review</h5>';
-
+        // Always show review if there are guesses
         if (guesses.length === 0) {
-            html += '<p class="text-muted">No guesses made.</p>';
-        } else {
-            html += '<ul class="list-group list-group-flush text-start">';
-            guesses.forEach(function (g) {
-                let badgeClass = g.correct ? "bg-success" : "bg-danger";
-                let badgeText = g.correct ? "Match" : "No Match";
-                if (g.special) {
-                    badgeClass = "bg-warning text-dark";
-                    badgeText = g.special;
-                }
-
-                html += `<li class="list-group-item d-flex justify-content-between align-items-center">
-                    ${g.word}
-                    <span class="badge ${badgeClass} rounded-pill">${badgeText}</span>
-                </li>`;
-            });
-            html += '</ul>';
+            reviewContainer.innerHTML = '';
+            return;
         }
 
-        html += '</div></div>';
+        let html = '<div class="mt-4 card"><div class="card-body">';
+        html += '<h5 class="card-title">Guesses</h5>';
+        html += '<ul class="list-group list-group-flush text-start">';
+
+        guesses.forEach(function (g) {
+            let badgeClass = g.correct ? "bg-success" : "bg-danger";
+            let badgeText = g.correct ? "Match" : "No Match";
+            if (g.special) {
+                badgeClass = "bg-warning text-dark";
+                badgeText = g.special;
+            }
+
+            html += `<li class="list-group-item d-flex justify-content-between align-items-center">
+                ${g.word}
+                <span class="badge ${badgeClass} rounded-pill">${badgeText}</span>
+            </li>`;
+        });
+        html += '</ul></div></div>';
         reviewContainer.innerHTML = html;
     }
 
@@ -97,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
         guessInput.disabled = true;
         resultSpan.innerHTML = message;
         resultSpan.className = messageClass;
-        showGameReview();
+        updateUI();
     }
 
     // Check if already won or lost
@@ -107,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
         endGame(false, "No more tries today! Come back tomorrow.", "text-danger");
     }
 
-    updateTriesDisplay();
+    updateUI();
 
     solutionForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -120,22 +167,25 @@ document.addEventListener('DOMContentLoaded', function () {
         var hashed_guess = md5(guess);
         var isCorrect = today_solution['solutions'].indexOf(hashed_guess) >= 0;
         var special = null;
+        var wonByLongest = false;
 
         if (isCorrect) {
-            console.log("Correct guess!");
-
             // Check for special achievements
             var is_longest = (hashed_guess === today_solution['longest_word_hash']);
             var is_shortest = (hashed_guess === today_solution['shortest_word_hash']);
 
-            if (is_longest) special = "Longest!";
+            if (is_longest) {
+                special = "Longest!";
+                wonByLongest = true;
+            }
             if (is_shortest) special = "Shortest!";
 
             guesses.push({ word: guess, correct: true, special: special });
 
             if (is_longest || is_shortest) {
                 hasWon = true;
-                saveGameState(triesLeft, true, guesses);
+                currentScore = calculateScore(guesses, true, wonByLongest);
+                saveGameState(triesLeft, true, guesses, currentScore);
 
                 var message = "WINNER!";
                 if (is_longest) {
@@ -146,16 +196,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 endGame(true, message, "text-success");
             } else {
                 // Correct word, but not the special one. Keep playing!
-                saveGameState(triesLeft, false, guesses);
-                resultSpan.innerHTML = "Good job, you've found a word that matches, but not the longest or shortest possible.";
+                currentScore = calculateScore(guesses, false, false);
+                saveGameState(triesLeft, false, guesses, currentScore);
+
+                resultSpan.innerHTML = "Good job! Found a match, but not the longest or shortest.";
                 resultSpan.className = "text-info";
-                guessInput.value = ""; // Clear input for next guess
+                guessInput.value = "";
+                updateUI();
             }
         } else {
             triesLeft--;
             guesses.push({ word: guess, correct: false, special: null });
-            saveGameState(triesLeft, false, guesses);
-            updateTriesDisplay();
+            currentScore = calculateScore(guesses, false, false);
+            saveGameState(triesLeft, false, guesses, currentScore);
 
             if (triesLeft <= 0) {
                 endGame(false, "Game Over! No more tries.", "text-danger");
@@ -163,7 +216,61 @@ document.addEventListener('DOMContentLoaded', function () {
                 resultSpan.innerHTML = "Incorrect. Try again!";
                 resultSpan.className = "text-warning";
                 guessInput.value = "";
+                updateUI();
             }
         }
     });
+
+    // History Logic
+    fetch('history.json')
+        .then(response => {
+            if (response.ok) return response.json();
+            throw new Error('No history');
+        })
+        .then(historyData => {
+            // Check if we have yesterday's data
+            // We can just show the most recent entry in historyData
+            const dates = Object.keys(historyData).sort().reverse();
+            if (dates.length > 0) {
+                historyButton.style.display = 'block';
+
+                historyButton.addEventListener('click', function () {
+                    // Show modal with yesterday's data
+                    const date = dates[0]; // Most recent
+                    const puzzleData = historyData[date];
+
+                    // Get user's guesses for that date
+                    const userHistory = JSON.parse(localStorage.getItem(HISTORY_KEY) || "{}");
+                    const userGame = userHistory[date];
+
+                    let html = `<p><strong>Date:</strong> ${date}</p>`;
+                    html += `<p><strong>Plate:</strong> ${puzzleData.plate}</p>`;
+
+                    if (userGame) {
+                        html += `<p><strong>Your Score:</strong> ${userGame.score}</p>`;
+                        html += `<p><strong>Result:</strong> ${userGame.won ? "WON" : "LOST"}</p>`;
+                        html += `<h6>Your Guesses:</h6><ul>`;
+                        userGame.guesses.forEach(g => {
+                            html += `<li>${g.word} ${g.correct ? "✅" : "❌"}</li>`;
+                        });
+                        html += `</ul>`;
+                    } else {
+                        html += `<p class="text-muted">You didn't play on this day.</p>`;
+                    }
+
+                    html += `<hr><h6>Solution:</h6>`;
+                    html += `<p><strong>Longest:</strong> ${puzzleData.longest_word}</p>`;
+                    html += `<p><strong>Shortest:</strong> ${puzzleData.shortest_word}</p>`;
+                    html += `<p><strong>All Solutions:</strong> ${puzzleData.solutions.join(", ")}</p>`;
+
+                    // Show history modal using Bootstrap API
+                    const historyModal = new bootstrap.Modal(document.getElementById('historyModal'));
+                    document.getElementById('historyModalBody').innerHTML = html;
+                    historyModal.show();
+                });
+            }
+        })
+        .catch(e => {
+            console.log("History not available yet.");
+        });
 });
