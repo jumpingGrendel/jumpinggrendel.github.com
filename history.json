@@ -702,5 +702,30 @@
     ],
     "shortest_word": "nehru",
     "longest_word": "dichlorodiphenyltrichloroethane"
+  },
+  "2025-11-30": {
+    "date": "2025-11-30",
+    "plate": "jju",
+    "solutions": [
+      "juju",
+      "jejune",
+      "jujube",
+      "jejunum",
+      "jujitsu",
+      "jujutsu",
+      "jejunely",
+      "jejunity",
+      "jiujitsu",
+      "jejunitis",
+      "jejuneness",
+      "jejunostomy",
+      "jejunoileitis"
+    ],
+    "common_solutions": [
+      "juju",
+      "jejunum"
+    ],
+    "shortest_word": "juju",
+    "longest_word": "jejunoileitis"
   }
 }
