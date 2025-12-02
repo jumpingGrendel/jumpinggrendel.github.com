@@ -99,6 +99,61 @@ document.addEventListener('DOMContentLoaded', function () {
     var historyButton = document.getElementById("historyButton");
     var historyModalBody = document.getElementById("historyModalBody");
 
+    // Share functionality helpers
+    function generateShareText(state) {
+        const plate = state.clue || "";
+        const correct = state.guesses.filter(g => g.correct).length;
+        const incorrect = state.guesses.filter(g => !g.correct).length;
+        const winStatus = state.won ? "WINNER" : "LOSER";
+        const url = window.location.href;
+        return `Plate: ${plate}\nCorrect guesses: ${correct}\nIncorrect guesses: ${incorrect}\nScore: ${state.score}\nResult: ${winStatus}\nPlay here: ${url}`;
+    }
+
+    function copyShareText(text) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Share text copied to clipboard!");
+            }).catch(err => {
+                console.error("Failed to copy: ", err);
+            });
+        } else {
+            // Fallback for older browsers
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                alert('Share text copied to clipboard!');
+            } catch (err) {
+                console.error('Fallback copy failed', err);
+            }
+            document.body.removeChild(textarea);
+        }
+    }
+
+    function createShareButton() {
+        const container = document.getElementById('shareContainer');
+        if (!container) return;
+        // Avoid creating multiple buttons
+        if (document.getElementById('shareButton')) return;
+        const btn = document.createElement('button');
+        btn.id = 'shareButton';
+        btn.className = 'btn btn-primary btn-sm';
+        btn.innerText = 'Share Results';
+        btn.addEventListener('click', () => {
+            const state = {
+                clue: clue_span ? clue_span.innerText : "",
+                guesses: guesses,
+                score: currentScore,
+                won: hasWon
+            };
+            const text = generateShareText(state);
+            copyShareText(text);
+        });
+        container.appendChild(btn);
+    }
+
     function updateUI() {
         if (triesSpan) {
             triesSpan.innerText = "Tries remaining: " + triesLeft;
@@ -145,6 +200,8 @@ document.addEventListener('DOMContentLoaded', function () {
         resultSpan.innerHTML = message;
         resultSpan.className = messageClass;
         updateUI();
+        // After UI update, create share button
+        createShareButton();
     }
 
     // Check if already won or lost
