@@ -149,7 +149,20 @@ document.addEventListener('DOMContentLoaded', function () {
                 won: hasWon
             };
             const text = generateShareText(state);
-            copyShareText(text);
+
+            // Use Web Share API if available (better for mobile)
+            if (navigator.share) {
+                navigator.share({
+                    title: 'License Plate Game Results',
+                    text: text
+                }).catch(err => {
+                    console.error('Share failed:', err);
+                    // Fallback to clipboard if share fails (e.g. user cancelled)
+                    copyShareText(text);
+                });
+            } else {
+                copyShareText(text);
+            }
         });
         container.appendChild(btn);
     }
