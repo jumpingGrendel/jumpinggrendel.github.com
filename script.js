@@ -291,6 +291,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
+    var giveUpButton = document.getElementById("giveUpButton");
+    if (giveUpButton) {
+        giveUpButton.addEventListener('click', function () {
+            if (hasWon || triesLeft <= 0) return;
+
+            if (confirm("Are you sure you want to give up?")) {
+                triesLeft = 0;
+                // Calculate score based on current state (likely low/negative)
+                currentScore = calculateScore(guesses, false, false);
+                saveGameState(triesLeft, false, guesses, currentScore);
+
+                endGame(false, "Game Over. You gave up.", "text-danger");
+            }
+        });
+    }
+
     // History Logic
     fetch('history.json')
         .then(response => {
