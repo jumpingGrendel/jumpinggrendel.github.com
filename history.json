@@ -7509,5 +7509,42 @@
     ],
     "shortest_word": "weal",
     "longest_word": "knowledgeableness"
+  },
+  "2025-12-11": {
+    "date": "2025-12-11",
+    "plate": "rwb",
+    "solutions": [
+      "brewpub",
+      "crowbar",
+      "drawbar",
+      "rowboat",
+      "browbeat",
+      "crowbait",
+      "drawback",
+      "rawboned",
+      "crowberry",
+      "renewable",
+      "screwball",
+      "screwbean",
+      "throwback",
+      "crownbeard",
+      "drawbridge",
+      "marrowbone",
+      "narrowboat",
+      "rowanberry",
+      "strawberry",
+      "strawboard",
+      "screwballer",
+      "unrenewable",
+      "nonrenewable"
+    ],
+    "common_solutions": [
+      "browbeat",
+      "crowbait",
+      "marrowbone",
+      "strawberry"
+    ],
+    "shortest_word": "brewpub",
+    "longest_word": "nonrenewable"
   }
 }
