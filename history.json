@@ -7867,5 +7867,35 @@
     ],
     "shortest_word": "palmar",
     "longest_word": "pentamethylenetetrazol"
+  },
+  "2025-12-13": {
+    "date": "2025-12-13",
+    "plate": "hxd",
+    "solutions": [
+      "hexad",
+      "hexed",
+      "hexapod",
+      "hexadrol",
+      "hexapoda",
+      "hydroxide",
+      "hexahedron",
+      "amphioxidae",
+      "asphyxiated",
+      "hexadecimal",
+      "hexanchidae",
+      "hyperextend",
+      "ethosuximide",
+      "hypoxidaceae",
+      "phensuximide",
+      "chlorhexidine",
+      "hexagrammidae",
+      "phylloxeridae",
+      "chlordiazepoxide"
+    ],
+    "common_solutions": [
+      "hydroxide"
+    ],
+    "shortest_word": "hexad",
+    "longest_word": "chlordiazepoxide"
   }
 }
