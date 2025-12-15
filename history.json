@@ -7897,5 +7897,44 @@
     ],
     "shortest_word": "hexad",
     "longest_word": "chlordiazepoxide"
+  },
+  "2025-12-14": {
+    "date": "2025-12-14",
+    "plate": "ohx",
+    "solutions": [
+      "orthodox",
+      "lagothrix",
+      "orthodoxy",
+      "prothorax",
+      "aldohexose",
+      "dolichonyx",
+      "hemothorax",
+      "hylophylax",
+      "ketohexose",
+      "orchiopexy",
+      "oropharynx",
+      "unorthodox",
+      "haemothorax",
+      "hydrothorax",
+      "nasopharynx",
+      "prophylaxis",
+      "thiothixene",
+      "unorthodoxy",
+      "cyclohexanol",
+      "morphallaxis",
+      "pneumothorax",
+      "chlorhexidine",
+      "plectrophenax",
+      "laryngopharynx",
+      "orthomyxovirus",
+      "iodochlorhydroxyquin"
+    ],
+    "common_solutions": [
+      "orthodox",
+      "orthodoxy",
+      "unorthodox"
+    ],
+    "shortest_word": "orthodox",
+    "longest_word": "iodochlorhydroxyquin"
   }
 }
