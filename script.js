@@ -49,24 +49,28 @@ function saveGameState(tries, won, guesses, score) {
 function calculateScore(guesses, won, wonByLongest) {
     let score = 0;
 
-    // Penalties and Bonuses from guesses
-    const wrongGuesses = guesses.filter(g => !g.correct).length;
-    const validNonWinning = guesses.filter(g => g.correct && !g.special).length;
-
-    score -= (wrongGuesses * 10);
-    score += (validNonWinning * 5);
-
-    // Win Bonus
-    if (won) {
-        if (wonByLongest) {
-            score += 100;
+    // Process guesses sequentially
+    guesses.forEach(g => {
+        if (g.correct) {
+            if (g.special) {
+                // Winning guess
+                if (g.special.includes("Longest")) {
+                    score += 100;
+                } else if (g.special.includes("Shortest")) {
+                    score += 85;
+                }
+            } else {
+                // Standard correct guess
+                score += 5;
+            }
         } else {
-            score += 85; // Shortest
+            // Wrong guess - penalty, but floor at 0
+            score = Math.max(0, score - 5);
         }
-    }
+    });
 
-    // Cap at 100, Min at 0
-    return Math.max(0, Math.min(100, score));
+    // Cap at 100
+    return Math.min(100, score);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -104,9 +108,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const plate = state.clue || "";
         const correct = state.guesses.filter(g => g.correct).length;
         const incorrect = state.guesses.filter(g => !g.correct).length;
-        const winStatus = state.won ? "WINNER" : "LOSER";
+        const winStatus = state.won ? "WINNER" : `Score: ${state.score}`;
         const url = window.location.href;
-        return `Plate: ${plate}\nCorrect guesses: ${correct}\nIncorrect guesses: ${incorrect}\nScore: ${state.score}\nResult: ${winStatus}\nPlay here: ${url}`;
+        return `Plate: ${plate}\nCorrect guesses: ${correct}\nInccorect guesses: ${incorrect}\nResult: ${winStatus}\nPlay here: ${url}`;
     }
 
     function copyShareText(text) {
@@ -263,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     message = "✨ WINNER! You found the SHORTEST word!";
                 }
-                endGame(true, message, "text-success");
+                endGame(true, message + " Come back tomorrow to see the correct solutions and play a new plate.", "text-success");
             } else {
                 // Correct word, but not the special one. Keep playing!
                 currentScore = calculateScore(guesses, false, false);
@@ -281,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
             saveGameState(triesLeft, false, guesses, currentScore);
 
             if (triesLeft <= 0) {
-                endGame(false, "Game Over! No more tries.", "text-danger");
+                endGame(false, "Game Over! No more tries. Come back tomorrow to see the correct solutions and play a new plate.", "text-danger");
             } else {
                 resultSpan.innerHTML = "Incorrect. Try again!";
                 resultSpan.className = "text-warning";
@@ -302,13 +306,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentScore = calculateScore(guesses, false, false);
                 saveGameState(triesLeft, false, guesses, currentScore);
 
-                endGame(false, "Game Over. You gave up.", "text-danger");
+                endGame(false, "Game Over. You gave up. Come back tomorrow to see the correct solutions and play a new plate.", "text-danger");
             }
         });
     }
 
     // History Logic
-    fetch('history.json')
+    fetch('history.json?t=' + new Date().getTime())
         .then(response => {
             if (response.ok) return response.json();
             throw new Error('No history');
