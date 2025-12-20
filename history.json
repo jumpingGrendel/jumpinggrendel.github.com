@@ -9047,5 +9047,28 @@
     ],
     "shortest_word": "vassal",
     "longest_word": "individualistically"
+  },
+  "2025-12-19": {
+    "date": "2025-12-19",
+    "plate": "ufz",
+    "solutions": [
+      "unfreeze",
+      "unfrozen",
+      "sulfurized",
+      "uniformize",
+      "desulfurize",
+      "sulfadiazine",
+      "unfertilized",
+      "sulfisoxazole",
+      "sulfamethazine",
+      "sulfamezathine",
+      "sulfamethoxazole"
+    ],
+    "common_solutions": [
+      "unfrozen",
+      "unfertilized"
+    ],
+    "shortest_word": "unfreeze",
+    "longest_word": "sulfamethoxazole"
   }
 }
