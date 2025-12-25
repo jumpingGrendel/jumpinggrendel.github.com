@@ -10324,5 +10324,29 @@
     ],
     "shortest_word": "tolu",
     "longest_word": "hydrochlorofluorocarbon"
+  },
+  "2025-12-24": {
+    "date": "2025-12-24",
+    "plate": "ixg",
+    "solutions": [
+      "fixing",
+      "mixing",
+      "fixings",
+      "indexing",
+      "mixology",
+      "mixologist",
+      "inexpugnable",
+      "inexpungible",
+      "intoxicating",
+      "inexpungeable",
+      "inextinguishable"
+    ],
+    "common_solutions": [
+      "fixing",
+      "mixing",
+      "indexing"
+    ],
+    "shortest_word": "fixing",
+    "longest_word": "inextinguishable"
   }
 }
