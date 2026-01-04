@@ -11279,5 +11279,19 @@
     ],
     "shortest_word": "tuck",
     "longest_word": "staurikosaurus"
+  },
+  "2026-01-03": {
+    "date": "2026-01-03",
+    "plate": "wfc",
+    "solutions": [
+      "hawfinch",
+      "whiteface",
+      "workforce"
+    ],
+    "common_solutions": [
+      "whiteface"
+    ],
+    "shortest_word": "hawfinch",
+    "longest_word": "whiteface"
   }
 }
