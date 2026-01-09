@@ -12302,5 +12302,21 @@
     ],
     "shortest_word": "bromic",
     "longest_word": "schizosaccharomycetaceae"
+  },
+  "2026-01-08": {
+    "date": "2026-01-08",
+    "plate": "vwk",
+    "solutions": [
+      "overwork",
+      "vowellike",
+      "silverwork",
+      "overworking",
+      "silverworker"
+    ],
+    "common_solutions": [
+      "overwork"
+    ],
+    "shortest_word": "overwork",
+    "longest_word": "silverworker"
   }
 }
