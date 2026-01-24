@@ -25761,5 +25761,43 @@
     ],
     "shortest_word": "tack",
     "longest_word": "counterclockwise"
+  },
+  "2026-01-23": {
+    "date": "2026-01-23",
+    "plate": "hzg",
+    "solutions": [
+      "herzberg",
+      "wheezing",
+      "whizbang",
+      "whizzbang",
+      "homozygote",
+      "homozygous",
+      "hypozeugma",
+      "rhizopogon",
+      "schizogony",
+      "wheezingly",
+      "emphasizing",
+      "hybridizing",
+      "heterozygote",
+      "heterozygous",
+      "homozygosity",
+      "chorizagrotis",
+      "schizophragma",
+      "synchronizing",
+      "heterozygosity",
+      "philosophizing",
+      "unsympathizing",
+      "desynchronizing",
+      "rhizopogonaceae"
+    ],
+    "common_solutions": [
+      "wheezing",
+      "homozygous",
+      "heterozygous",
+      "philosophizing",
+      "desynchronizing"
+    ],
+    "shortest_word": "herzberg",
+    "longest_word": "desynchronizing"
   }
 }
