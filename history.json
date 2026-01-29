@@ -27255,5 +27255,28 @@
     ],
     "shortest_word": "kike",
     "longest_word": "knickerbockers"
+  },
+  "2026-01-28": {
+    "date": "2026-01-28",
+    "plate": "ugk",
+    "solutions": [
+      "tugrik",
+      "tughrik",
+      "tunguska",
+      "chungking",
+      "fenugreek",
+      "roughneck",
+      "funguslike",
+      "mussorgsky",
+      "moussorgsky",
+      "schomburgkia",
+      "laughingstock",
+      "ungentlemanlike"
+    ],
+    "common_solutions": [
+      "roughneck"
+    ],
+    "shortest_word": "tugrik",
+    "longest_word": "ungentlemanlike"
   }
 }
