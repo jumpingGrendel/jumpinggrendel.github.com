@@ -27746,5 +27746,22 @@
     ],
     "shortest_word": "rack",
     "longest_word": "counterclockwise"
+  },
+  "2026-01-30": {
+    "date": "2026-01-30",
+    "plate": "ypf",
+    "solutions": [
+      "typify",
+      "typeface",
+      "hyperfine",
+      "typification",
+      "cypriniformes"
+    ],
+    "common_solutions": [
+      "typify",
+      "hyperfine"
+    ],
+    "shortest_word": "typify",
+    "longest_word": "cypriniformes"
   }
 }
