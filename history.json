@@ -29608,5 +29608,45 @@
     ],
     "shortest_word": "oviform",
     "longest_word": "oversimplification"
+  },
+  "2026-02-03": {
+    "date": "2026-02-03",
+    "plate": "wvn",
+    "solutions": [
+      "woven",
+      "waving",
+      "wivern",
+      "wyvern",
+      "unwoven",
+      "weaving",
+      "swerving",
+      "waveband",
+      "wavering",
+      "waviness",
+      "handwoven",
+      "wavefront",
+      "wolverine",
+      "interwoven",
+      "newsvendor",
+      "unswerving",
+      "unwavering",
+      "wavelength",
+      "hairweaving",
+      "twelvemonth",
+      "weathervane",
+      "woodcarving",
+      "unswervingly",
+      "unwaveringly"
+    ],
+    "common_solutions": [
+      "woven",
+      "waving",
+      "handwoven",
+      "interwoven",
+      "unwavering",
+      "wavelength"
+    ],
+    "shortest_word": "woven",
+    "longest_word": "unswervingly"
   }
 }
