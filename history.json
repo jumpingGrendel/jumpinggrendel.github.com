@@ -29648,5 +29648,46 @@
     ],
     "shortest_word": "woven",
     "longest_word": "unswervingly"
+  },
+  "2026-02-04": {
+    "date": "2026-02-04",
+    "plate": "mlx",
+    "solutions": [
+      "maalox",
+      "smilax",
+      "complex",
+      "mailbox",
+      "malaxis",
+      "malraux",
+      "simplex",
+      "camelpox",
+      "smallpox",
+      "complexly",
+      "multiplex",
+      "circumflex",
+      "complexify",
+      "complexion",
+      "complexity",
+      "complexness",
+      "multiplexer",
+      "complexifier",
+      "morphallaxis",
+      "anomalopteryx",
+      "pseudosmallpox",
+      "hamamelidoxylon",
+      "dimethylglyoxime",
+      "methylenedioxymethamphetamine"
+    ],
+    "common_solutions": [
+      "complex",
+      "mailbox",
+      "simplex",
+      "smallpox",
+      "complexion",
+      "complexity",
+      "dimethylglyoxime"
+    ],
+    "shortest_word": "maalox",
+    "longest_word": "methylenedioxymethamphetamine"
   }
 }
