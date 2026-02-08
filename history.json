@@ -30121,5 +30121,19 @@
     ],
     "shortest_word": "guvnor",
     "longest_word": "uvulopalatopharyngoplasty"
+  },
+  "2026-02-07": {
+    "date": "2026-02-07",
+    "plate": "xqt",
+    "solutions": [
+      "exquisite",
+      "exquisitely",
+      "exquisiteness"
+    ],
+    "common_solutions": [
+      "exquisite"
+    ],
+    "shortest_word": "exquisite",
+    "longest_word": "exquisiteness"
   }
 }
