@@ -30135,5 +30135,26 @@
     ],
     "shortest_word": "exquisite",
     "longest_word": "exquisiteness"
+  },
+  "2026-02-08": {
+    "date": "2026-02-08",
+    "plate": "nrj",
+    "solutions": [
+      "interject",
+      "introject",
+      "naranjilla",
+      "natterjack",
+      "introjected",
+      "interjection",
+      "introjection",
+      "unprejudiced"
+    ],
+    "common_solutions": [
+      "interject",
+      "introject",
+      "introjected"
+    ],
+    "shortest_word": "interject",
+    "longest_word": "interjection"
   }
 }
