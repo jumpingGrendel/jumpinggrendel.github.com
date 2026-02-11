@@ -30236,5 +30236,24 @@
     ],
     "shortest_word": "blowy",
     "longest_word": "mulligatawny"
+  },
+  "2026-02-10": {
+    "date": "2026-02-10",
+    "plate": "qbb",
+    "solutions": [
+      "qabbala",
+      "quibble",
+      "squabby",
+      "qabbalah",
+      "quibbler",
+      "squabble",
+      "squabbler",
+      "equiprobable"
+    ],
+    "common_solutions": [
+      "squabble"
+    ],
+    "shortest_word": "qabbala",
+    "longest_word": "equiprobable"
   }
 }
