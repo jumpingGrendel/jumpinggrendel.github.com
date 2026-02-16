@@ -32748,5 +32748,31 @@
     ],
     "shortest_word": "neva",
     "longest_word": "counterrevolutionary"
+  },
+  "2026-02-15": {
+    "date": "2026-02-15",
+    "plate": "jdg",
+    "solutions": [
+      "judge",
+      "judges",
+      "adjudge",
+      "judging",
+      "judgment",
+      "misjudge",
+      "prejudge",
+      "judgement",
+      "judgeship",
+      "judgmental",
+      "prejudgment",
+      "prejudgement",
+      "nonjudgmental"
+    ],
+    "common_solutions": [
+      "judge",
+      "judgment",
+      "misjudge"
+    ],
+    "shortest_word": "judge",
+    "longest_word": "nonjudgmental"
   }
 }
