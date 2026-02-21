@@ -33084,5 +33084,22 @@
     ],
     "shortest_word": "tactful",
     "longest_word": "ultracentrifugation"
+  },
+  "2026-02-20": {
+    "date": "2026-02-20",
+    "plate": "vws",
+    "solutions": [
+      "viewers",
+      "advowson",
+      "viewless",
+      "vowelise",
+      "liverwurst",
+      "heavenwards"
+    ],
+    "common_solutions": [
+      "viewers"
+    ],
+    "shortest_word": "viewers",
+    "longest_word": "heavenwards"
   }
 }
