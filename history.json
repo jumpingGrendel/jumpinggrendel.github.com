@@ -36434,5 +36434,34 @@
     ],
     "shortest_word": "payoff",
     "longest_word": "polytetrafluoroethylene"
+  },
+  "2026-02-24": {
+    "date": "2026-02-24",
+    "plate": "txr",
+    "solutions": [
+      "taxer",
+      "texture",
+      "taxpayer",
+      "textured",
+      "taxidermy",
+      "taximeter",
+      "taxonomer",
+      "texarkana",
+      "artaxerxes",
+      "taxidriver",
+      "multiplexer",
+      "taxidermist",
+      "intermixture",
+      "toxicodendron",
+      "orthomyxovirus"
+    ],
+    "common_solutions": [
+      "texture",
+      "taxpayer",
+      "textured",
+      "taxidriver"
+    ],
+    "shortest_word": "taxer",
+    "longest_word": "orthomyxovirus"
   }
 }
