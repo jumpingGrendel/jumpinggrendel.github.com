@@ -39434,5 +39434,46 @@
     ],
     "shortest_word": "tiler",
     "longest_word": "dichlorodiphenyltrichloroethane"
+  },
+  "2026-03-03": {
+    "date": "2026-03-03",
+    "plate": "tvd",
+    "solutions": [
+      "starved",
+      "traveled",
+      "activated",
+      "contrived",
+      "motivated",
+      "stevedore",
+      "theravada",
+      "travelled",
+      "captivated",
+      "cultivated",
+      "monteverdi",
+      "montevideo",
+      "stovepiped",
+      "untraveled",
+      "extraverted",
+      "extroverted",
+      "introverted",
+      "togaviridae",
+      "uncontrived",
+      "unmotivated",
+      "untravelled",
+      "untraversed",
+      "tertigravida",
+      "uncultivated",
+      "collectivised",
+      "collectivized"
+    ],
+    "common_solutions": [
+      "starved",
+      "traveled",
+      "activated",
+      "contrived",
+      "motivated"
+    ],
+    "shortest_word": "starved",
+    "longest_word": "collectivised"
   }
 }
