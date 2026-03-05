@@ -39475,5 +39475,27 @@
     ],
     "shortest_word": "starved",
     "longest_word": "collectivised"
+  },
+  "2026-03-04": {
+    "date": "2026-03-04",
+    "plate": "fxr",
+    "solutions": [
+      "fixer",
+      "flexor",
+      "fixture",
+      "flexure",
+      "foxtrot",
+      "flexeril",
+      "foxberry",
+      "fluxmeter",
+      "floxuridine",
+      "inframaxillary"
+    ],
+    "common_solutions": [
+      "fixer",
+      "fixture"
+    ],
+    "shortest_word": "fixer",
+    "longest_word": "inframaxillary"
   }
 }
