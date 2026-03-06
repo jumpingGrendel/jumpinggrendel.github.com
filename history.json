@@ -39497,5 +39497,27 @@
     ],
     "shortest_word": "fixer",
     "longest_word": "inframaxillary"
+  },
+  "2026-03-05": {
+    "date": "2026-03-05",
+    "plate": "jfr",
+    "solutions": [
+      "jafar",
+      "jaffar",
+      "joffre",
+      "jeffers",
+      "joffrey",
+      "jackfruit",
+      "jefferson",
+      "justifier",
+      "rajiformes",
+      "jeffersonian",
+      "justificatory"
+    ],
+    "common_solutions": [
+      "jeffersonian"
+    ],
+    "shortest_word": "jafar",
+    "longest_word": "justificatory"
   }
 }
