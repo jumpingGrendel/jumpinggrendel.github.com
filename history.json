@@ -42312,5 +42312,19 @@
     ],
     "shortest_word": "bulge",
     "longest_word": "uvulopalatopharyngoplasty"
+  },
+  "2026-03-17": {
+    "date": "2026-03-17",
+    "plate": "oqd",
+    "solutions": [
+      "torquemada",
+      "unconquered",
+      "conquistador"
+    ],
+    "common_solutions": [
+      "unconquered"
+    ],
+    "shortest_word": "torquemada",
+    "longest_word": "conquistador"
   }
 }
