@@ -42326,5 +42326,29 @@
     ],
     "shortest_word": "torquemada",
     "longest_word": "conquistador"
+  },
+  "2026-03-18": {
+    "date": "2026-03-18",
+    "plate": "ktv",
+    "solutions": [
+      "kutuzov",
+      "cookstove",
+      "talkative",
+      "sakartvelo",
+      "katharevusa",
+      "talkatively",
+      "untalkative",
+      "basketweaver",
+      "talkativeness",
+      "avalokitesvara",
+      "yekaterinoslav",
+      "avalokiteshvara",
+      "keratoconjunctivitis"
+    ],
+    "common_solutions": [
+      "talkative"
+    ],
+    "shortest_word": "kutuzov",
+    "longest_word": "keratoconjunctivitis"
   }
 }
