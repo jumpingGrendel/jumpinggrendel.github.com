@@ -46264,5 +46264,35 @@
     ],
     "shortest_word": "wajda",
     "longest_word": "warmheartedness"
+  },
+  "2026-03-30": {
+    "date": "2026-03-30",
+    "plate": "brq",
+    "solutions": [
+      "burqa",
+      "barque",
+      "braque",
+      "baroque",
+      "briquet",
+      "brusque",
+      "barbeque",
+      "briquette",
+      "brusquely",
+      "burlesque",
+      "sobriquet",
+      "arboresque",
+      "lambrequin",
+      "soubriquet",
+      "albuquerque",
+      "baroqueness",
+      "brusqueness",
+      "barranquilla",
+      "rembrandtesque"
+    ],
+    "common_solutions": [
+      "baroque"
+    ],
+    "shortest_word": "burqa",
+    "longest_word": "rembrandtesque"
   }
 }
