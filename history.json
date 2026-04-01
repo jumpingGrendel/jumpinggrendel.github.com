@@ -46294,5 +46294,42 @@
     ],
     "shortest_word": "burqa",
     "longest_word": "rembrandtesque"
+  },
+  "2026-03-31": {
+    "date": "2026-03-31",
+    "plate": "zpe",
+    "solutions": [
+      "zapper",
+      "zipper",
+      "zapotec",
+      "zeppelin",
+      "zoophyte",
+      "zoospore",
+      "clozapine",
+      "zapodidae",
+      "zapotecan",
+      "ziphiidae",
+      "zygoptera",
+      "zygospore",
+      "ozonosphere",
+      "azathioprine",
+      "schizopetalon",
+      "schizophrenia",
+      "schizophrenic",
+      "schizophyceae",
+      "benzodiazepine",
+      "rhizophoraceae",
+      "zygophyllaceae",
+      "cyclobenzaprine",
+      "phenazopyridine",
+      "rhizopogonaceae",
+      "benzylpenicillin",
+      "chlordiazepoxide"
+    ],
+    "common_solutions": [
+      "schizophrenic"
+    ],
+    "shortest_word": "zapper",
+    "longest_word": "benzylpenicillin"
   }
 }
