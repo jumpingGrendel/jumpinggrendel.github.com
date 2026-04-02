@@ -46331,5 +46331,53 @@
     ],
     "shortest_word": "zapper",
     "longest_word": "benzylpenicillin"
+  },
+  "2026-04-01": {
+    "date": "2026-04-01",
+    "plate": "rqs",
+    "solutions": [
+      "marquis",
+      "request",
+      "arquebus",
+      "iroquois",
+      "marquess",
+      "marquise",
+      "harquebus",
+      "rehnquist",
+      "requested",
+      "requester",
+      "requisite",
+      "turquoise",
+      "perquisite",
+      "relinquish",
+      "requiescat",
+      "tarquinius",
+      "baroqueness",
+      "brusqueness",
+      "requisition",
+      "unrequested",
+      "prerequisite",
+      "relinquished",
+      "tranquillise",
+      "derequisition",
+      "grotesqueness",
+      "relinquishing",
+      "requisiteness",
+      "tranquilising",
+      "tranquilliser",
+      "ventriloquism",
+      "ventriloquist",
+      "relinquishment",
+      "tranquillising",
+      "picturesqueness"
+    ],
+    "common_solutions": [
+      "request",
+      "relinquish",
+      "requisition",
+      "prerequisite"
+    ],
+    "shortest_word": "marquis",
+    "longest_word": "picturesqueness"
   }
 }
