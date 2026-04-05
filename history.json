@@ -48265,5 +48265,27 @@
     ],
     "shortest_word": "pace",
     "longest_word": "dichlorodiphenyltrichloroethane"
+  },
+  "2026-04-04": {
+    "date": "2026-04-04",
+    "plate": "qlz",
+    "solutions": [
+      "equalize",
+      "equalizer",
+      "equilibrize",
+      "tranquilize",
+      "unequalized",
+      "equalization",
+      "tranquilizer",
+      "tranquillize",
+      "tranquilizing",
+      "tranquillizer",
+      "tranquillizing"
+    ],
+    "common_solutions": [
+      "tranquilizer"
+    ],
+    "shortest_word": "equalize",
+    "longest_word": "tranquillizing"
   }
 }
