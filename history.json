@@ -50880,5 +50880,21 @@
     ],
     "shortest_word": "cylix",
     "longest_word": "dichlorodiphenyltrichloroethane"
+  },
+  "2026-04-08": {
+    "date": "2026-04-08",
+    "plate": "zwn",
+    "solutions": [
+      "zwingli",
+      "szechwan",
+      "zworykin",
+      "zimbabwean",
+      "prizewinning"
+    ],
+    "common_solutions": [
+      "prizewinning"
+    ],
+    "shortest_word": "zwingli",
+    "longest_word": "prizewinning"
   }
 }
