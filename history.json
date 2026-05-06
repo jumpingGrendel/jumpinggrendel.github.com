@@ -59638,5 +59638,35 @@
     ],
     "shortest_word": "lamarck",
     "longest_word": "ungentlemanlike"
+  },
+  "2026-05-05": {
+    "date": "2026-05-05",
+    "plate": "prq",
+    "solutions": [
+      "parquet",
+      "paraquat",
+      "paraquet",
+      "paroquet",
+      "parquetry",
+      "parroquet",
+      "perquisite",
+      "picaresque",
+      "primaquine",
+      "parqueterie",
+      "picturesque",
+      "propinquity",
+      "prerequisite",
+      "picturesquely",
+      "sculpturesque",
+      "unpicturesque",
+      "picturesqueness"
+    ],
+    "common_solutions": [
+      "picturesque",
+      "prerequisite",
+      "unpicturesque"
+    ],
+    "shortest_word": "parquet",
+    "longest_word": "picturesqueness"
   }
 }
