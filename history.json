@@ -61211,5 +61211,17 @@
     ],
     "shortest_word": "godown",
     "longest_word": "roadworthiness"
+  },
+  "2026-05-10": {
+    "date": "2026-05-10",
+    "plate": "dzv",
+    "solutions": [
+      "rendezvous"
+    ],
+    "common_solutions": [
+      "rendezvous"
+    ],
+    "shortest_word": "rendezvous",
+    "longest_word": "rendezvous"
   }
 }
