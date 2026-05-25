@@ -67888,5 +67888,48 @@
     ],
     "shortest_word": "kurd",
     "longest_word": "brokenheartedness"
+  },
+  "2026-05-24": {
+    "date": "2026-05-24",
+    "plate": "sfb",
+    "solutions": [
+      "snuffbox",
+      "softback",
+      "softball",
+      "surfbird",
+      "surfboat",
+      "surfboard",
+      "sufferable",
+      "falsifiable",
+      "justifiable",
+      "justifiably",
+      "safebreaker",
+      "satisfiable",
+      "specifiable",
+      "surfboarder",
+      "classifiable",
+      "insufferable",
+      "shuffleboard",
+      "surfboarding",
+      "transferable",
+      "unsufferable",
+      "sacrificeable",
+      "transferrable",
+      "transformable",
+      "unjustifiable",
+      "unjustifiably",
+      "unsatisfiable",
+      "unclassifiable",
+      "untransferable",
+      "nontransferable",
+      "transferability"
+    ],
+    "common_solutions": [
+      "snuffbox",
+      "justifiably",
+      "safebreaker"
+    ],
+    "shortest_word": "snuffbox",
+    "longest_word": "nontransferable"
   }
 }
