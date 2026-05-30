@@ -69460,5 +69460,37 @@
     ],
     "shortest_word": "wipe",
     "longest_word": "chimneysweeper"
+  },
+  "2026-05-29": {
+    "date": "2026-05-29",
+    "plate": "pyk",
+    "solutions": [
+      "pyknic",
+      "kopiyka",
+      "payback",
+      "copybook",
+      "paycheck",
+      "playback",
+      "playbook",
+      "potyokin",
+      "pyknosis",
+      "pyknotic",
+      "piggyback",
+      "playmaker",
+      "poppycock",
+      "puppylike",
+      "prayerbook",
+      "phytoplankton",
+      "psychokinesis",
+      "psychokinetic",
+      "psychometrika",
+      "phenylketonuria"
+    ],
+    "common_solutions": [
+      "playback",
+      "pyknotic"
+    ],
+    "shortest_word": "pyknic",
+    "longest_word": "phenylketonuria"
   }
 }
