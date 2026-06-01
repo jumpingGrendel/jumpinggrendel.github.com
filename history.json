@@ -69584,5 +69584,22 @@
     ],
     "shortest_word": "abaft",
     "longest_word": "cartilaginification"
+  },
+  "2026-05-31": {
+    "date": "2026-05-31",
+    "plate": "ydk",
+    "solutions": [
+      "drydock",
+      "hygrodeik",
+      "yardstick",
+      "hydrokinetic",
+      "hydrocracking",
+      "hydrokinetics"
+    ],
+    "common_solutions": [
+      "yardstick"
+    ],
+    "shortest_word": "drydock",
+    "longest_word": "hydrocracking"
   }
 }
