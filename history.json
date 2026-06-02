@@ -69601,5 +69601,24 @@
     ],
     "shortest_word": "drydock",
     "longest_word": "hydrocracking"
+  },
+  "2026-06-01": {
+    "date": "2026-06-01",
+    "plate": "vqi",
+    "solutions": [
+      "vaquita",
+      "vanquish",
+      "vanquisher",
+      "unvanquished",
+      "vanquishable",
+      "ventriloquism",
+      "ventriloquist",
+      "unvanquishable"
+    ],
+    "common_solutions": [
+      "vanquish"
+    ],
+    "shortest_word": "vaquita",
+    "longest_word": "unvanquishable"
   }
 }
