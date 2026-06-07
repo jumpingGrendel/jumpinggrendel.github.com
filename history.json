@@ -70652,5 +70652,30 @@
     ],
     "shortest_word": "camas",
     "longest_word": "buckminsterfullerene"
+  },
+  "2026-06-06": {
+    "date": "2026-06-06",
+    "plate": "ssq",
+    "solutions": [
+      "sasquatch",
+      "statuesque",
+      "subsequent",
+      "subsequence",
+      "susquehanna",
+      "passamaquody",
+      "subsequently",
+      "sculpturesque",
+      "sesquipedalia",
+      "sesquipedalian",
+      "sesquipedality",
+      "subsequentness",
+      "sesquicentennial"
+    ],
+    "common_solutions": [
+      "subsequent",
+      "subsequently"
+    ],
+    "shortest_word": "sasquatch",
+    "longest_word": "sesquicentennial"
   }
 }
