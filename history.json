@@ -74614,5 +74614,48 @@
     ],
     "shortest_word": "veldt",
     "longest_word": "dichlorodiphenyltrichloroethane"
+  },
+  "2026-06-17": {
+    "date": "2026-06-17",
+    "plate": "iqo",
+    "solutions": [
+      "liquor",
+      "aliquot",
+      "iroquois",
+      "misquote",
+      "iroquoian",
+      "liquorice",
+      "siqueiros",
+      "cinquefoil",
+      "clioquinol",
+      "iniquitous",
+      "inquisitor",
+      "liquidator",
+      "ubiquinone",
+      "ubiquitous",
+      "inquisition",
+      "inquisitory",
+      "liquidation",
+      "milquetoast",
+      "disquisition",
+      "iniquitously",
+      "liquefaction",
+      "misquotation",
+      "inquisitorial",
+      "quinquefoliate",
+      "ubiquitousness",
+      "disqualification"
+    ],
+    "common_solutions": [
+      "liquor",
+      "aliquot",
+      "misquote",
+      "inquisitor",
+      "ubiquitous",
+      "liquidation",
+      "milquetoast"
+    ],
+    "shortest_word": "liquor",
+    "longest_word": "disqualification"
   }
 }
