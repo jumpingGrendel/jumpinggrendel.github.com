@@ -83377,5 +83377,22 @@
     ],
     "shortest_word": "lavage",
     "longest_word": "disbelievingly"
+  },
+  "2026-07-08": {
+    "date": "2026-07-08",
+    "plate": "thq",
+    "solutions": [
+      "technique",
+      "earthquake",
+      "discotheque",
+      "methaqualone",
+      "naphthoquinone"
+    ],
+    "common_solutions": [
+      "technique",
+      "earthquake"
+    ],
+    "shortest_word": "technique",
+    "longest_word": "naphthoquinone"
   }
 }
