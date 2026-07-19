@@ -87770,5 +87770,25 @@
     ],
     "shortest_word": "wharf",
     "longest_word": "weightlifting"
+  },
+  "2026-07-18": {
+    "date": "2026-07-18",
+    "plate": "soj",
+    "solutions": [
+      "soja",
+      "shoji",
+      "skopje",
+      "skoplje",
+      "sojourn",
+      "slovenija",
+      "sojourner",
+      "showjumping",
+      "stockjobber"
+    ],
+    "common_solutions": [
+      "sojourn"
+    ],
+    "shortest_word": "soja",
+    "longest_word": "showjumping"
   }
 }
