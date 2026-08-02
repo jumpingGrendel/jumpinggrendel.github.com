@@ -92327,5 +92327,21 @@
     ],
     "shortest_word": "alkylbenzenesulfonate",
     "longest_word": "alkylbenzenesulfonate"
+  },
+  "2026-08-01": {
+    "date": "2026-08-01",
+    "plate": "jlm",
+    "solutions": [
+      "jerusalem",
+      "ijsselmeer",
+      "journalism",
+      "photojournalism"
+    ],
+    "common_solutions": [
+      "jerusalem",
+      "journalism"
+    ],
+    "shortest_word": "jerusalem",
+    "longest_word": "photojournalism"
   }
 }
