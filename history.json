@@ -92749,5 +92749,31 @@
     ],
     "shortest_word": "haydn",
     "longest_word": "chlorobenzylidenemalononitrile"
+  },
+  "2026-08-04": {
+    "date": "2026-08-04",
+    "plate": "vwh",
+    "solutions": [
+      "overwhelm",
+      "viewgraph",
+      "everywhere",
+      "overgrowth",
+      "overweight",
+      "heavyweight",
+      "overwrought",
+      "overwhelming",
+      "overwhelmingly"
+    ],
+    "common_solutions": [
+      "overwhelm",
+      "everywhere",
+      "overweight",
+      "heavyweight",
+      "overwhelmed",
+      "overwhelming",
+      "overwhelmingly"
+    ],
+    "shortest_word": "overwhelm",
+    "longest_word": "overwhelmingly"
   }
 }
