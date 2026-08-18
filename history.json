@@ -98167,5 +98167,23 @@
     ],
     "shortest_word": "icebox",
     "longest_word": "icebox"
+  },
+  "2026-08-17": {
+    "date": "2026-08-17",
+    "plate": "jsu",
+    "solutions": [
+      "jesus",
+      "jesuit",
+      "jurisprudence",
+      "jurisprudentially"
+    ],
+    "common_solutions": [
+      "jesus",
+      "jesuit",
+      "jurisprudence",
+      "jurisprudentially"
+    ],
+    "shortest_word": "jesus",
+    "longest_word": "jurisprudentially"
   }
 }
