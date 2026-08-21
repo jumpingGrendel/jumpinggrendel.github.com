@@ -98681,5 +98681,49 @@
     ],
     "shortest_word": "bellhop",
     "longest_word": "crystallography"
+  },
+  "2026-08-20": {
+    "date": "2026-08-20",
+    "plate": "mfy",
+    "solutions": [
+      "modify",
+      "amplify",
+      "magnify",
+      "mollify",
+      "mystify",
+      "simplify",
+      "exemplify",
+      "dreamfully",
+      "manifestly",
+      "mercifully",
+      "mournfully",
+      "comfortably",
+      "imperfectly",
+      "shamefacedly",
+      "magnificently",
+      "uncomfortably",
+      "imperfectability"
+    ],
+    "common_solutions": [
+      "modify",
+      "amplify",
+      "magnify",
+      "mollify",
+      "mystify",
+      "simplify",
+      "exemplify",
+      "dreamfully",
+      "manifestly",
+      "mercifully",
+      "mournfully",
+      "comfortably",
+      "imperfectly",
+      "shamefacedly",
+      "magnificently",
+      "uncomfortably",
+      "imperfectability"
+    ],
+    "shortest_word": "modify",
+    "longest_word": "imperfectability"
   }
 }
