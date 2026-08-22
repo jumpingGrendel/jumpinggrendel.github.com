@@ -98725,5 +98725,29 @@
     ],
     "shortest_word": "modify",
     "longest_word": "imperfectability"
+  },
+  "2026-08-21": {
+    "date": "2026-08-21",
+    "plate": "ysg",
+    "solutions": [
+      "eyesight",
+      "physiology",
+      "physiognomy",
+      "physiologic",
+      "physiological",
+      "crystallography",
+      "psychophysiology"
+    ],
+    "common_solutions": [
+      "eyesight",
+      "physiology",
+      "physiognomy",
+      "physiologic",
+      "physiological",
+      "crystallography",
+      "psychophysiology"
+    ],
+    "shortest_word": "eyesight",
+    "longest_word": "psychophysiology"
   }
 }
