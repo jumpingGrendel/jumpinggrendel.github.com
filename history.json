@@ -105037,5 +105037,37 @@
     ],
     "shortest_word": "wahoo",
     "longest_word": "wholeheartedly"
+  },
+  "2026-09-08": {
+    "date": "2026-09-08",
+    "plate": "wfa",
+    "solutions": [
+      "warfare",
+      "welfare",
+      "wolfram",
+      "downfall",
+      "snowfall",
+      "warfarin",
+      "windfall",
+      "newsflash",
+      "snowflake",
+      "waterfall",
+      "newfoundland"
+    ],
+    "common_solutions": [
+      "warfare",
+      "welfare",
+      "wolfram",
+      "downfall",
+      "snowfall",
+      "warfarin",
+      "windfall",
+      "newsflash",
+      "snowflake",
+      "waterfall",
+      "newfoundland"
+    ],
+    "shortest_word": "warfare",
+    "longest_word": "newfoundland"
   }
 }
