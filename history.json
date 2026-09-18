@@ -108251,5 +108251,25 @@
     ],
     "shortest_word": "shekels",
     "longest_word": "counterclockwise"
+  },
+  "2026-09-17": {
+    "date": "2026-09-17",
+    "plate": "mzz",
+    "solutions": [
+      "mezzo",
+      "muzzle",
+      "mezzanine",
+      "mozzarella",
+      "embezzlement"
+    ],
+    "common_solutions": [
+      "mezzo",
+      "muzzle",
+      "mezzanine",
+      "mozzarella",
+      "embezzlement"
+    ],
+    "shortest_word": "mezzo",
+    "longest_word": "embezzlement"
   }
 }
