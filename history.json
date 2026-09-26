@@ -109179,5 +109179,27 @@
     ],
     "shortest_word": "diploma",
     "longest_word": "interdepartmental"
+  },
+  "2026-09-25": {
+    "date": "2026-09-25",
+    "plate": "uqa",
+    "solutions": [
+      "unequal",
+      "susquehanna",
+      "unequivocal",
+      "unqualified",
+      "unequivocally",
+      "unquestionably"
+    ],
+    "common_solutions": [
+      "unequal",
+      "susquehanna",
+      "unequivocal",
+      "unqualified",
+      "unequivocally",
+      "unquestionably"
+    ],
+    "shortest_word": "unequal",
+    "longest_word": "unquestionably"
   }
 }
