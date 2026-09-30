@@ -112161,5 +112161,39 @@
     ],
     "shortest_word": "ante",
     "longest_word": "immunohistochemistry"
+  },
+  "2026-09-29": {
+    "date": "2026-09-29",
+    "plate": "bwo",
+    "solutions": [
+      "blowjob",
+      "blowout",
+      "beadwork",
+      "bodywork",
+      "bookworm",
+      "buzzword",
+      "bandwagon",
+      "beechwood",
+      "blackwood",
+      "bollywood",
+      "subwoofer",
+      "brownstone"
+    ],
+    "common_solutions": [
+      "blowjob",
+      "blowout",
+      "beadwork",
+      "bodywork",
+      "bookworm",
+      "buzzword",
+      "bandwagon",
+      "beechwood",
+      "blackwood",
+      "bollywood",
+      "subwoofer",
+      "brownstone"
+    ],
+    "shortest_word": "blowjob",
+    "longest_word": "brownstone"
   }
 }
