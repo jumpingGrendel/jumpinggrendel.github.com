@@ -113731,5 +113731,25 @@
     ],
     "shortest_word": "wipe",
     "longest_word": "sweepstakes"
+  },
+  "2026-10-03": {
+    "date": "2026-10-03",
+    "plate": "uvv",
+    "solutions": [
+      "survive",
+      "survival",
+      "survivor",
+      "surviving",
+      "subversive"
+    ],
+    "common_solutions": [
+      "survive",
+      "survival",
+      "survivor",
+      "surviving",
+      "subversive"
+    ],
+    "shortest_word": "survive",
+    "longest_word": "subversive"
   }
 }
