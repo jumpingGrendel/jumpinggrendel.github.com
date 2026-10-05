@@ -113751,5 +113751,51 @@
     ],
     "shortest_word": "survive",
     "longest_word": "subversive"
+  },
+  "2026-10-04": {
+    "date": "2026-10-04",
+    "plate": "erx",
+    "solutions": [
+      "xerox",
+      "cervix",
+      "vertex",
+      "gearbox",
+      "hendrix",
+      "celebrex",
+      "cybersex",
+      "peroxide",
+      "hypertext",
+      "perplexed",
+      "tinderbox",
+      "chatterbox",
+      "peroxidase",
+      "perplexing",
+      "superoxide",
+      "heterosexual",
+      "methotrexate",
+      "decarboxylase"
+    ],
+    "common_solutions": [
+      "xerox",
+      "cervix",
+      "vertex",
+      "gearbox",
+      "hendrix",
+      "celebrex",
+      "cybersex",
+      "peroxide",
+      "hypertext",
+      "perplexed",
+      "tinderbox",
+      "chatterbox",
+      "peroxidase",
+      "perplexing",
+      "superoxide",
+      "heterosexual",
+      "methotrexate",
+      "decarboxylase"
+    ],
+    "shortest_word": "xerox",
+    "longest_word": "decarboxylase"
   }
 }
