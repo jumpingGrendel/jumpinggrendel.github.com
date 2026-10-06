@@ -113797,5 +113797,29 @@
     ],
     "shortest_word": "xerox",
     "longest_word": "decarboxylase"
+  },
+  "2026-10-05": {
+    "date": "2026-10-05",
+    "plate": "ohv",
+    "solutions": [
+      "mohave",
+      "cohesive",
+      "bolshevik",
+      "gorbachev",
+      "prohibitive",
+      "comprehensive",
+      "comprehensively"
+    ],
+    "common_solutions": [
+      "mohave",
+      "cohesive",
+      "bolshevik",
+      "gorbachev",
+      "prohibitive",
+      "comprehensive",
+      "comprehensively"
+    ],
+    "shortest_word": "mohave",
+    "longest_word": "comprehensively"
   }
 }
