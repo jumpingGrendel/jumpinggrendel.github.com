@@ -115417,5 +115417,41 @@
     ],
     "shortest_word": "mips",
     "longest_word": "immunosuppressive"
+  },
+  "2026-10-13": {
+    "date": "2026-10-13",
+    "plate": "kus",
+    "solutions": [
+      "kudos",
+      "kursk",
+      "kaunas",
+      "kyushu",
+      "ruckus",
+      "kurdish",
+      "knuckles",
+      "kurosawa",
+      "nicklaus",
+      "kurdistan",
+      "lackluster",
+      "steakhouse",
+      "blockbuster"
+    ],
+    "common_solutions": [
+      "kudos",
+      "kursk",
+      "kaunas",
+      "kyushu",
+      "ruckus",
+      "kurdish",
+      "knuckles",
+      "kurosawa",
+      "nicklaus",
+      "kurdistan",
+      "lackluster",
+      "steakhouse",
+      "blockbuster"
+    ],
+    "shortest_word": "kudos",
+    "longest_word": "blockbuster"
   }
 }
