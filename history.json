@@ -117201,5 +117201,45 @@
     ],
     "shortest_word": "wagon",
     "longest_word": "acknowledgement"
+  },
+  "2026-10-22": {
+    "date": "2026-10-22",
+    "plate": "koi",
+    "solutions": [
+      "kodiak",
+      "knowing",
+      "klondike",
+      "knocking",
+      "knowingly",
+      "knoxville",
+      "prokofiev",
+      "reckoning",
+      "checkpoint",
+      "eukaryotic",
+      "planktonic",
+      "unknowingly",
+      "jacksonville",
+      "shostakovich",
+      "skateboarding"
+    ],
+    "common_solutions": [
+      "kodiak",
+      "knowing",
+      "klondike",
+      "knocking",
+      "knowingly",
+      "knoxville",
+      "prokofiev",
+      "reckoning",
+      "checkpoint",
+      "eukaryotic",
+      "planktonic",
+      "unknowingly",
+      "jacksonville",
+      "shostakovich",
+      "skateboarding"
+    ],
+    "shortest_word": "kodiak",
+    "longest_word": "skateboarding"
   }
 }
