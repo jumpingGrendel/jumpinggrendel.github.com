@@ -117471,5 +117471,29 @@
     ],
     "shortest_word": "occam",
     "longest_word": "schizosaccharomyces"
+  },
+  "2026-10-24": {
+    "date": "2026-10-24",
+    "plate": "ufh",
+    "solutions": [
+      "sunfish",
+      "bluefish",
+      "unselfish",
+      "groundfish",
+      "unfaithful",
+      "unfinished",
+      "unfurnished"
+    ],
+    "common_solutions": [
+      "sunfish",
+      "bluefish",
+      "unselfish",
+      "groundfish",
+      "unfaithful",
+      "unfinished",
+      "unfurnished"
+    ],
+    "shortest_word": "sunfish",
+    "longest_word": "unfurnished"
   }
 }
