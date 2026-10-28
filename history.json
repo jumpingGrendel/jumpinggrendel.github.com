@@ -117645,5 +117645,29 @@
     ],
     "shortest_word": "beep",
     "longest_word": "cyclobenzaprine"
+  },
+  "2026-10-27": {
+    "date": "2026-10-27",
+    "plate": "mhz",
+    "solutions": [
+      "emphasize",
+      "helmholtz",
+      "megahertz",
+      "emphasized",
+      "mechanized",
+      "sympathize",
+      "emphasizing"
+    ],
+    "common_solutions": [
+      "emphasize",
+      "helmholtz",
+      "megahertz",
+      "emphasized",
+      "mechanized",
+      "sympathize",
+      "emphasizing"
+    ],
+    "shortest_word": "emphasize",
+    "longest_word": "emphasizing"
   }
 }
