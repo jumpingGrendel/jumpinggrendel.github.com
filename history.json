@@ -117669,5 +117669,27 @@
     ],
     "shortest_word": "emphasize",
     "longest_word": "emphasizing"
+  },
+  "2026-10-28": {
+    "date": "2026-10-28",
+    "plate": "ukb",
+    "solutions": [
+      "jukebox",
+      "huckleberry",
+      "unbreakable",
+      "unspeakable",
+      "unthinkable",
+      "unmistakable"
+    ],
+    "common_solutions": [
+      "jukebox",
+      "huckleberry",
+      "unbreakable",
+      "unspeakable",
+      "unthinkable",
+      "unmistakable"
+    ],
+    "shortest_word": "jukebox",
+    "longest_word": "unmistakable"
   }
 }
