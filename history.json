@@ -118899,5 +118899,45 @@
     ],
     "shortest_word": "thea",
     "longest_word": "immunohistochemistry"
+  },
+  "2026-11-01": {
+    "date": "2026-11-01",
+    "plate": "gip",
+    "solutions": [
+      "gimp",
+      "grip",
+      "gipsy",
+      "gripe",
+      "gossip",
+      "gripes",
+      "bagpipe",
+      "glimpse",
+      "flagship",
+      "gripping",
+      "fingertip",
+      "gillespie",
+      "angiography",
+      "angioplasty",
+      "guardianship"
+    ],
+    "common_solutions": [
+      "gimp",
+      "grip",
+      "gipsy",
+      "gripe",
+      "gossip",
+      "gripes",
+      "bagpipe",
+      "glimpse",
+      "flagship",
+      "gripping",
+      "fingertip",
+      "gillespie",
+      "angiography",
+      "angioplasty",
+      "guardianship"
+    ],
+    "shortest_word": "gimp",
+    "longest_word": "guardianship"
   }
 }
