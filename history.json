@@ -119905,5 +119905,27 @@
     ],
     "shortest_word": "lisp",
     "longest_word": "internationalisation"
+  },
+  "2026-11-03": {
+    "date": "2026-11-03",
+    "plate": "kud",
+    "solutions": [
+      "kudos",
+      "kudzu",
+      "kurdish",
+      "kurdistan",
+      "background",
+      "backgrounder"
+    ],
+    "common_solutions": [
+      "kudos",
+      "kudzu",
+      "kurdish",
+      "kurdistan",
+      "background",
+      "backgrounder"
+    ],
+    "shortest_word": "kudos",
+    "longest_word": "backgrounder"
   }
 }
