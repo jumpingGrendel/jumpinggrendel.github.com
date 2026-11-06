@@ -120615,5 +120615,31 @@
     ],
     "shortest_word": "rapid",
     "longest_word": "disproportionately"
+  },
+  "2026-11-05": {
+    "date": "2026-11-05",
+    "plate": "gtz",
+    "solutions": [
+      "glitz",
+      "gretzky",
+      "yangtze",
+      "digitize",
+      "digitizer",
+      "megahertz",
+      "digitization",
+      "magnetization"
+    ],
+    "common_solutions": [
+      "glitz",
+      "gretzky",
+      "yangtze",
+      "digitize",
+      "digitizer",
+      "megahertz",
+      "digitization",
+      "magnetization"
+    ],
+    "shortest_word": "glitz",
+    "longest_word": "magnetization"
   }
 }
