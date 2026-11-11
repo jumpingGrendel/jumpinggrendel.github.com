@@ -123417,5 +123417,31 @@
     ],
     "shortest_word": "sari",
     "longest_word": "schizosaccharomyces"
+  },
+  "2026-11-10": {
+    "date": "2026-11-10",
+    "plate": "zlt",
+    "solutions": [
+      "zloty",
+      "zealot",
+      "zoloft",
+      "zeolite",
+      "hazelnut",
+      "zooplankton",
+      "embezzlement",
+      "piezoelectric"
+    ],
+    "common_solutions": [
+      "zloty",
+      "zealot",
+      "zoloft",
+      "zeolite",
+      "hazelnut",
+      "zooplankton",
+      "embezzlement",
+      "piezoelectric"
+    ],
+    "shortest_word": "zloty",
+    "longest_word": "piezoelectric"
   }
 }
