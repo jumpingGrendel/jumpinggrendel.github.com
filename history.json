@@ -125331,5 +125331,31 @@
     ],
     "shortest_word": "deuce",
     "longest_word": "immunofluorescence"
+  },
+  "2026-11-12": {
+    "date": "2026-11-12",
+    "plate": "kpl",
+    "solutions": [
+      "kepler",
+      "kampala",
+      "kipling",
+      "blackpool",
+      "skeptical",
+      "stockpile",
+      "workplace",
+      "marketplace"
+    ],
+    "common_solutions": [
+      "kepler",
+      "kampala",
+      "kipling",
+      "blackpool",
+      "skeptical",
+      "stockpile",
+      "workplace",
+      "marketplace"
+    ],
+    "shortest_word": "kepler",
+    "longest_word": "marketplace"
   }
 }
