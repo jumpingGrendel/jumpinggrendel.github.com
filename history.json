@@ -125357,5 +125357,43 @@
     ],
     "shortest_word": "kepler",
     "longest_word": "marketplace"
+  },
+  "2026-11-13": {
+    "date": "2026-11-13",
+    "plate": "qsn",
+    "solutions": [
+      "question",
+      "quiescent",
+      "equestrian",
+      "queensland",
+      "acquisition",
+      "inquisition",
+      "questioning",
+      "requisition",
+      "questionable",
+      "quintessence",
+      "questionnaire",
+      "sequestration",
+      "quintessential",
+      "unquestionably"
+    ],
+    "common_solutions": [
+      "question",
+      "quiescent",
+      "equestrian",
+      "queensland",
+      "acquisition",
+      "inquisition",
+      "questioning",
+      "requisition",
+      "questionable",
+      "quintessence",
+      "questionnaire",
+      "sequestration",
+      "quintessential",
+      "unquestionably"
+    ],
+    "shortest_word": "question",
+    "longest_word": "quintessential"
   }
 }
