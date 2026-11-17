@@ -125757,5 +125757,45 @@
     ],
     "shortest_word": "just",
     "longest_word": "photojournalism"
+  },
+  "2026-11-16": {
+    "date": "2026-11-16",
+    "plate": "isw",
+    "solutions": [
+      "jigsaw",
+      "winslow",
+      "chainsaw",
+      "disallow",
+      "fishbowl",
+      "sideshow",
+      "chickasaw",
+      "kingstown",
+      "dishwasher",
+      "eisenhower",
+      "morristown",
+      "wristwatch",
+      "bittersweet",
+      "williamstown",
+      "whistleblower"
+    ],
+    "common_solutions": [
+      "jigsaw",
+      "winslow",
+      "chainsaw",
+      "disallow",
+      "fishbowl",
+      "sideshow",
+      "chickasaw",
+      "kingstown",
+      "dishwasher",
+      "eisenhower",
+      "morristown",
+      "wristwatch",
+      "bittersweet",
+      "williamstown",
+      "whistleblower"
+    ],
+    "shortest_word": "jigsaw",
+    "longest_word": "whistleblower"
   }
 }
