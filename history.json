@@ -125797,5 +125797,25 @@
     ],
     "shortest_word": "jigsaw",
     "longest_word": "whistleblower"
+  },
+  "2026-11-17": {
+    "date": "2026-11-17",
+    "plate": "bjv",
+    "solutions": [
+      "objective",
+      "subjective",
+      "objectively",
+      "objectivity",
+      "subjectivity"
+    ],
+    "common_solutions": [
+      "objective",
+      "subjective",
+      "objectively",
+      "objectivity",
+      "subjectivity"
+    ],
+    "shortest_word": "objective",
+    "longest_word": "subjectivity"
   }
 }
