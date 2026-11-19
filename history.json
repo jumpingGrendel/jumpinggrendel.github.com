@@ -125817,5 +125817,27 @@
     ],
     "shortest_word": "objective",
     "longest_word": "subjectivity"
+  },
+  "2026-11-18": {
+    "date": "2026-11-18",
+    "plate": "nax",
+    "solutions": [
+      "xanax",
+      "syntax",
+      "anthrax",
+      "naproxen",
+      "dominatrix",
+      "anaphylaxis"
+    ],
+    "common_solutions": [
+      "xanax",
+      "syntax",
+      "anthrax",
+      "naproxen",
+      "dominatrix",
+      "anaphylaxis"
+    ],
+    "shortest_word": "xanax",
+    "longest_word": "anaphylaxis"
   }
 }
