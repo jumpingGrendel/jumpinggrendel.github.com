@@ -125839,5 +125839,49 @@
     ],
     "shortest_word": "xanax",
     "longest_word": "anaphylaxis"
+  },
+  "2026-11-19": {
+    "date": "2026-11-19",
+    "plate": "ckp",
+    "solutions": [
+      "backup",
+      "lockup",
+      "pickup",
+      "checkup",
+      "cockpit",
+      "jackpot",
+      "backdrop",
+      "backpack",
+      "backspace",
+      "blackpool",
+      "clerkship",
+      "stockpile",
+      "backpacker",
+      "checkpoint",
+      "chickenpox",
+      "backpacking",
+      "peacekeeping"
+    ],
+    "common_solutions": [
+      "backup",
+      "lockup",
+      "pickup",
+      "checkup",
+      "cockpit",
+      "jackpot",
+      "backdrop",
+      "backpack",
+      "backspace",
+      "blackpool",
+      "clerkship",
+      "stockpile",
+      "backpacker",
+      "checkpoint",
+      "chickenpox",
+      "backpacking",
+      "peacekeeping"
+    ],
+    "shortest_word": "backup",
+    "longest_word": "peacekeeping"
   }
 }
