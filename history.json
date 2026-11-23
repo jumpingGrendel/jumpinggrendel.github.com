@@ -126085,5 +126085,53 @@
     ],
     "shortest_word": "kore",
     "longest_word": "shakespearean"
+  },
+  "2026-11-22": {
+    "date": "2026-11-22",
+    "plate": "egv",
+    "solutions": [
+      "engrave",
+      "segovia",
+      "engraved",
+      "engraver",
+      "negative",
+      "caregiver",
+      "engraving",
+      "eigenvalue",
+      "negatively",
+      "negativity",
+      "regressive",
+      "vegetative",
+      "integrative",
+      "legislative",
+      "nonnegative",
+      "prerogative",
+      "degenerative",
+      "investigative",
+      "cytomegalovirus"
+    ],
+    "common_solutions": [
+      "engrave",
+      "segovia",
+      "engraved",
+      "engraver",
+      "negative",
+      "caregiver",
+      "engraving",
+      "eigenvalue",
+      "negatively",
+      "negativity",
+      "regressive",
+      "vegetative",
+      "integrative",
+      "legislative",
+      "nonnegative",
+      "prerogative",
+      "degenerative",
+      "investigative",
+      "cytomegalovirus"
+    ],
+    "shortest_word": "engrave",
+    "longest_word": "cytomegalovirus"
   }
 }
