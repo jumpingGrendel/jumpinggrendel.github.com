@@ -48,9 +48,18 @@ function saveGameState(tries, won, guesses, score) {
 
 function calculateScore(guesses, won, wonByLongest) {
     let score = 0;
+    const seenWords = new Set();
 
     // Process guesses sequentially
     guesses.forEach(g => {
+        const wordKey = g.word ? g.word.toLowerCase() : "";
+        if (wordKey) {
+            if (seenWords.has(wordKey)) {
+                return;
+            }
+            seenWords.add(wordKey);
+        }
+
         if (g.correct) {
             if (g.special) {
                 // Winning guess
@@ -237,6 +246,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var guess = guessInput.value.toLowerCase().trim();
         if (!guess) return;
+
+        // Check if word has already been guessed
+        var alreadyGuessed = guesses.some(function (g) {
+            return g.word && g.word.toLowerCase() === guess;
+        });
+
+        if (alreadyGuessed) {
+            resultSpan.innerHTML = "You already guessed that word!";
+            resultSpan.className = "text-warning";
+            guessInput.value = "";
+            return;
+        }
 
         var hashed_guess = md5(guess);
         var isCorrect = today_solution['solutions'].indexOf(hashed_guess) >= 0;
